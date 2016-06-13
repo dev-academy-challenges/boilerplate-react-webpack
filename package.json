@@ -7,7 +7,17 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --hot --inline",
-    "server": "node server/server"
+    "server": "node server/server",
+    "test": "ava --watch"
+  },
+  "ava": {
+    "failfast": true,
+    "tap": true,
+    "require": [
+      "babel-register",
+      "./test/helpers/setup-browser-env.js"
+    ],
+    "babel": "inherit"
   },
   "babel": {
     "presets": [
@@ -25,6 +35,7 @@
   "author": "EDA",
   "license": "ISC",
   "devDependencies": {
+    "ava": "^0.15.2",
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
     "babel-polyfill": "^6.9.1",
@@ -32,7 +43,9 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-react-hmre": "^1.1.1",
     "copy-webpack-plugin": "^3.0.1",
+    "enzyme": "^2.3.0",
     "react": "^15.1.0",
+    "react-addons-test-utils": "^15.1.0",
     "react-dom": "^15.1.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
