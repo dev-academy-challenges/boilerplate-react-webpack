@@ -1,23 +1,13 @@
 {
-  "name": "react-webpack-starter",
-  "version": "1.0.0",
+  "name": "boilerplate-react-webpack",
+  "version": "0.1.0",
   "description": "A webpack React starter",
   "main": "server/server.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "start": "webpack-dev-server --hot --inline",
-    "server": "node server/server",
-    "test": "ava --watch"
-  },
-  "ava": {
-    "failfast": true,
-    "tap": true,
-    "require": [
-      "babel-register",
-      "./test/helpers/setup-browser-env.js"
-    ],
-    "babel": "inherit"
+    "webpack": "webpack",
+    "dev": "webpack-dev-server --hot --inline",
+    "start": "npm run webpack --watch && node server/server",
+    "test": "tape -r babel-register 'test/**/*.test.js' | tap-spec"
   },
   "babel": {
     "presets": [
@@ -25,28 +15,21 @@
       "react"
     ]
   },
-  "env": {
-    "start": {
-      "presets": [
-        "react-hmre"
-      ]
-    }
-  },
   "author": "EDA",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^0.15.2",
-    "babel-core": "^6.9.1",
+    "babel-core": "^6.13.2",
     "babel-loader": "^6.2.4",
-    "babel-polyfill": "^6.9.1",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.5.0",
-    "babel-preset-react-hmre": "^1.1.1",
-    "copy-webpack-plugin": "^3.0.1",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-register": "^6.11.6",
     "enzyme": "^2.3.0",
-    "react": "^15.1.0",
-    "react-addons-test-utils": "^15.1.0",
-    "react-dom": "^15.1.0",
+    "jsx-loader": "^0.13.2",
+    "react": "^15.3.0",
+    "react-addons-test-utils": "^15.3.2",
+    "react-dom": "^15.3.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
