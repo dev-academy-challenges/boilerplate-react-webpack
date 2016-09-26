@@ -4,9 +4,8 @@
   "description": "A webpack React starter",
   "main": "server/server.js",
   "scripts": {
-    "webpack": "webpack",
     "dev": "webpack-dev-server --content-base client/ --hot --inline",
-    "start": "npm run webpack --watch && node server/server",
+    "start": "node server/server & webpack --watch",
     "test": "tape -r babel-register 'test/**/*.test.js' | tap-spec"
   },
   "babel": {
@@ -25,6 +24,7 @@
     "babel-register": "^6.11.6",
     "enzyme": "^2.3.0",
     "jsx-loader": "^0.13.2",
+    "nodemon": "^1.10.2",
     "react": "^15.3.0",
     "react-addons-test-utils": "^15.3.2",
     "react-dom": "^15.3.0",
