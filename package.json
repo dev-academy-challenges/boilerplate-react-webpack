@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "dev": "webpack-dev-server --content-base public/ --hot --inline",
-    "start": "node server/server & webpack --watch",
+    "start": "nodemon server/server & webpack --watch",
     "test": "tape -r babel-register 'test/**/*.test.js' | tap-spec"
   },
   "babel": {
