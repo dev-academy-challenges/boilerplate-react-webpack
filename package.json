@@ -1,7 +1,8 @@
 {
   "name": "boilerplate-react-webpack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A webpack React starter",
+  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
   "main": "server/index.js",
   "scripts": {
     "dev": "webpack-dev-server --content-base public/ --hot --inline",
