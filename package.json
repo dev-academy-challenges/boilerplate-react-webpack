@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --content-base public/ --hot --inline",
     "start": "nodemon --watch server server/index & webpack --watch",
-    "test": "tape -r babel-register 'test/**/*.test.js' | tap-spec"
+    "test": "tape -r babel-register 'test/**/*.test.js' | tap-spec",
+    "watch": "nodemon -e js,jsx -x npm test"
   },
   "babel": {
     "presets": [
