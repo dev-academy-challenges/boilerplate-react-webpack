@@ -25,6 +25,7 @@
     "babel-preset-react": "^6.16.0",
     "babel-register": "^6.18.0",
     "enzyme": "^2.7.0",
+    "json-loader": "^0.5.4",
     "jsx-loader": "^0.13.2",
     "nodemon": "^1.11.0",
     "react": "^15.4.2",
