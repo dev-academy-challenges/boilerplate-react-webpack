@@ -9,10 +9,14 @@ module.exports = {
       test: /\.jsx?$/,
       loader: 'babel-loader',
       exclude: /node_modules/
-    }]
+   }, {
+      test: /\.json$/,
+      loader: 'json-loader',
+      exclude: /node_modules/
+   }]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.json']
   },
   devtool: 'source-map'
 }
