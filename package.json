@@ -5,9 +5,8 @@
   "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
   "main": "server/index.js",
   "scripts": {
-    "dev": "webpack-dev-server --content-base public/ --hot --inline",
     "start": "nodemon --watch server server/index & webpack --watch",
-    "test": "tape -r babel-register 'test/**/*.test.js' | tap-spec",
+    "test": "tape -r babel-register 'test/**/*.test.js' | tap-diff",
     "watch": "nodemon -e js,jsx -x npm test"
   },
   "babel": {
@@ -30,7 +29,7 @@
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
-    "tap-spec": "^4.1.1",
+    "tap-diff": "^0.1.1",
     "tape": "^4.6.3",
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2"
