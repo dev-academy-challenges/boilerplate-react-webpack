@@ -8,6 +8,7 @@ export default class App extends React.Component {
     this.state = { people: [] }
   }
 
+
   setPeople(people) {
     this.setState({
       people: people
@@ -23,7 +24,6 @@ export default class App extends React.Component {
           <Form onPeopleCompleted={this.setPeople} />
         }
       </div>
-
     )
   }
 }
