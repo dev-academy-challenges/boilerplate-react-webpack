@@ -1,4 +1,3 @@
-
 [{
   name: 'Master Pushing Persian',
   description:'The master pushing persian catishscope is for those felines out there with a MASTER complex, they make other felines nervous, especially the git master mice muncher. Its also for those forgetful felines, who have adopted the OPSY tag.'
@@ -18,4 +17,4 @@
 {
   name: 'typo turkish',
   description: 'The Typo Turkish is the king of the backslash. They appear to type at 120 words per minute but with the majority of those keystrokes being the backslash, they are lucky to actually hit double figures.'
-}
+}]
