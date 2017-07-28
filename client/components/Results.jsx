@@ -4,10 +4,12 @@ export default class Results extends React.Component {
 
   constructor(props) {
     super(props)
-    this.getResults()
+    this.results = this.getResults(this.props.people)
 
     this.teamDetails = [
-      {name: 'unicorn', description: 'a unicorn'}
+      {name: 'unicorn', description: 'a unicorn'},
+      {name: 'chimera', description: 'a chimera'},
+      {name: 'selkie', description: 'a selkie'},
     ]
   }
 
@@ -45,11 +47,12 @@ export default class Results extends React.Component {
   render() {
     return (
       <ul>
-{let sortResults = this.getResults()
-      Object.keys(this.getResults()).map((team) => {
-        this.teamDetails.find((teamDetail) => teamDetail.name = team)
+      {Object.keys(this.results).map((teamName) => {
+        let teamDetail = this.teamDetails.find((teamDetail) => teamDetail.name == teamName)
+        console.log(teamName)
+        console.log(teamDetail)
         return (
-          <li>{team}</li>
+          <li>{teamName} - {teamDetail.description}</li>
         )
       })}
       </ul>
