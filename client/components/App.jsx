@@ -1,10 +1,13 @@
 import React from 'react'
+import Form from "./Form"
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <div>
+    <h1>Mythical teams</h1>
+    <Form />
+  </div>
   )
 }
 
 export default App
-
