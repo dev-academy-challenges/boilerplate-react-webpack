@@ -5,7 +5,9 @@
   "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
   "main": "server/index.js",
   "scripts": {
-    "start": "nodemon --watch server server/index & webpack --watch",
+    "dev": "nodemon --watch server server/index & webpack --watch",
+    "start": "node server/index.js",
+    "postinstall": "webpack",
     "test": "tape -r babel-register 'test/**/*.test.js' | tap-diff",
     "watch": "nodemon -e js,jsx -x npm test"
   },
@@ -18,24 +20,24 @@
   "author": "EDA",
   "license": "ISC",
   "devDependencies": {
+    "enzyme": "^2.7.0",
+    "nodemon": "^1.11.0",
+    "tap-diff": "^0.1.1",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2",
+    "jsx-loader": "^0.13.2",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "body-parser": "^1.15.2",
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-register": "^6.18.0",
-    "enzyme": "^2.7.0",
-    "jsx-loader": "^0.13.2",
-    "nodemon": "^1.11.0",
-    "react": "^15.4.2",
-    "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "tap-diff": "^0.1.1",
-    "tape": "^4.6.3",
-    "webpack": "^2.3.3",
-    "webpack-dev-server": "^2.4.2"
-  },
-  "dependencies": {
-    "body-parser": "^1.15.2",
     "express": "^4.14.0"
   }
 }
