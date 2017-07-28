@@ -17,9 +17,6 @@ export default class Form extends React.Component {
     let people = this.state.people
     people.push(person)
     this.setState({people: people})
-    console.log(this.state.people.value);
-    e.target.reset()
-
   }
 
   render() {
@@ -27,7 +24,7 @@ export default class Form extends React.Component {
       <div>
       <form onSubmit={this.submitPerson}>
         <input ref='firstname' name='firstname' placeholder='name' type='text'/>
-        <input type="submit" />
+        <input type="submit"/>
       </form>
       <ul>
         {this.state.people.map((person) => {
