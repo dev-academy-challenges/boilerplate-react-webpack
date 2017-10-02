@@ -5,9 +5,9 @@
   "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
   "main": "server/index.js",
   "scripts": {
-    "start": "nodemon --watch server server/index & webpack --watch",
-    "test": "tape -r babel-register 'test/**/*.test.js' | tap-diff",
-    "watch": "nodemon -e js,jsx -x npm test"
+    "start": "webpack && node server",
+    "dev": "nodemon --watch server & webpack --watch",
+    "test": "tape -r babel-register 'test/**/*.test.js' | tap-diff"
   },
   "babel": {
     "presets": [
