@@ -1,9 +1,27 @@
 body {
   font-family: raleway;
 }
-
+/* 
 h1 {
   font-size: 80px;
   position: absolute;
   top: 30vw;
+} */
+
+figure {
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
 }
+
+.image-container {
+  margin-top: 10vh;
+  
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
