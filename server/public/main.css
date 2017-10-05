@@ -15,10 +15,11 @@ figure {
   -webkit-animation:spin 4s linear infinite;
   -moz-animation:spin 4s linear infinite;
   animation:spin 4s linear infinite;
+  opacity: 0.5;
 }
 
 .image-container {
-  margin-top: 10vh;
+  margin-top: 30vh;
   
 }
 
