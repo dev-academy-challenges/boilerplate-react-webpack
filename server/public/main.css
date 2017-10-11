@@ -20,7 +20,12 @@ figure {
 
 .image-container {
   margin-top: 30vh;
-  
+  /* width: 40vw; */
+  /* height: 10vw; */
+}
+
+.tab {
+  background-color: #C2076E;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
