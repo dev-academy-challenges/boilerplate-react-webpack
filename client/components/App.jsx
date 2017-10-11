@@ -20,6 +20,9 @@ class App extends React.Component {
               <li><Link to='/Contact'>Contact Us</Link></li>
               <li><Link to='About'>About Us</Link></li>
             </ul>
+
+            <hr/>
+
             <Route exact path='/' component={Home} />
             <Route path='/Find' component={Find} />
             <Route path='/Contact' component={Contact} />
