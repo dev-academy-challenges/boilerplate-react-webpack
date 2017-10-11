@@ -6,7 +6,7 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='contact'>
         <h2>Contact Us</h2>
       </div>
     )

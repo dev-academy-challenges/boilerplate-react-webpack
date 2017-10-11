@@ -6,8 +6,9 @@ class Find extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='find'>
         <h2>Find a car</h2>
+
       </div>
     )
   }
