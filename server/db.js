@@ -7,7 +7,7 @@ module.exports = {
 var vids = [{
   id: 1,
   vidTitle: 'Joe\'s talk',
-  vidUrl: 'https://www.youtube.com/embed/FaOSCASqLsE',
+  vidUrl: 'https://www.youtube.com/embed/747-Q-WqLHc',
   vidPicUrl: '',
   vidDesc: 'Acme Inc.',
   commentGood: [
@@ -27,8 +27,8 @@ var vids = [{
   topic: 7
 }, {
   id: 2,
-  vidTitle: 'Joe\'s talk',
-  vidUrl: '',
+  vidTitle: 'Richard\'s talk',
+  vidUrl: 'https://www.youtube.com/embed/lTo0csITwN4',
   vidPicUrl: '',
   vidDesc: 'Acme Inc.',
   commentGood: [
@@ -48,8 +48,8 @@ var vids = [{
   topic: 7
 }, {
   id: 3,
-  vidTitle: 'Joe\'s talk',
-  vidUrl: '',
+  vidTitle: 'Daz\'s talk',
+  vidUrl: 'https://www.youtube.com/embed/uqmA4fg0zQQ',
   vidPicUrl: '',
   vidDesc: 'Acme Inc.',
   commentGood: [
@@ -69,8 +69,8 @@ var vids = [{
   topic: 7
 }, {
   id: 4,
-  vidTitle: 'Joe\'s talk',
-  vidUrl: '',
+  vidTitle: 'Andrea\'s talk',
+  vidUrl: 'https://www.youtube.com/embed/V5N0Ukb8LGg',
   vidPicUrl: '',
   vidDesc: 'Acme Inc.',
   commentGood: [
