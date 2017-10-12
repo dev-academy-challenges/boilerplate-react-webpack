@@ -13,11 +13,21 @@ const Lunch = () => {
 
 return (
   <div>
-    <h1>TEST</h1>
+    <h1>The Lunch Menu</h1>
     <ul>
       {lunches.map(lunch => {
         return <li key={lunch.id}>
-          {lunch.name}
+          <ul>
+            <li>{lunch.name}</li>
+            <li>{lunch.description}</li>
+              <ul>
+                {lunch.ingredients.map(ingredient => {
+                  return <li key={ingredient.type}>
+                    {ingredient.type}
+                  </li>
+                })}
+              </ul>
+          </ul>
         </li>
       })}
     </ul>
