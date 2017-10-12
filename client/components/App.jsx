@@ -2,32 +2,37 @@ import React from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom'
 
 import Header from './Header'
-import Main_con from './Main_con'
+import ActiveVid from './ActiveVid'
 // import Symbols from './Symbols'
 import Feedbacks from './Feedbacks'
 import Footer from './Footer'
 
-import vids from '../../db'
+import { getVids } from '../../server/db'
 
 class App extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      activeVidUrl: ''
+      vids: getVids(),
+      activeVid: getVids()[0]
     }
     this.showVideo = this.showVideo.bind(this)
   }
 
-  showVideo () {
+  showVideo (vid) {
     this.setState({
-      
+      activeVid: vid
     })
   }
 
   render () {
     return (
-      <div className="id-container">
-
+      <div className="app">
+        <Header />
+        <div className="vid-container">
+          <ActiveVid video={this.state.activeVid} />
+          <VidList />
+        </div>
       </div>
     )
   }
