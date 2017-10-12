@@ -1,12 +1,24 @@
 
 exports.up = function(knex, Promise) {
-  knex.schema.createTableIfNotExists('cars-info', table => {
-    table.increments();
-    table.string('')
-    table.timestamps();
+  return knex.schema.createTableIfNotExists('cars-info', function (table) {
+    table.increments().primary();
+    table.string('name');
+    table.string('year');
+    table.string('body');
+    table.string('seats');
+    table.string('origin');
+    table.string('color');
+    table.string('transmission');
+    table.string('drive');
+    table.string('odometer');
+    table.string('fuel');
+    table.string('engine');
+    table.string('wof_exp');
+    table.string('rego_exp');
+    table.string('image');
   })
 };
 
 exports.down = function(knex, Promise) {
-  knex.schema.dropTableIfExists('cars-info')
+  return knex.schema.dropTableIfExists('cars-info')
 };
