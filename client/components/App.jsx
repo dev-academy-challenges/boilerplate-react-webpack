@@ -5,6 +5,7 @@ import Home from './Home.jsx'
 import Find from './Find.jsx'
 import Contact from './Contact.jsx'
 import About from './About.jsx'
+import Nav from './Nav.jsx'
 
 class App extends React.Component {
   
@@ -28,6 +29,7 @@ class App extends React.Component {
             <Route path='/Contact' component={Contact} />
             <Route path='/About' component={About} />
           </div>
+          <Nav  />
           </div>
       </Router>
     )
