@@ -6,6 +6,7 @@ import ActiveVid from './ActiveVid'
 // import Symbols from './Symbols'
 import Feedbacks from './Feedbacks'
 import Footer from './Footer'
+import VidList from './VidList'
 
 import { getVids } from '../../server/db'
 

@@ -6,7 +6,7 @@ const ActiveVid = (props) => {
   return (
     
       <div className="vid-main">
-        <iframe width="854" height="480" src={props.video.vidUrl} frameborder="0" allowfullscreen></iframe>
+        <iframe width="854" height="480" src={props.video.vidUrl} frameBorder="0" allowFullScreen></iframe>
       </div>
      
     
