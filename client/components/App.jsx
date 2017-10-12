@@ -12,7 +12,6 @@ import Contact from './Contact'
 
 const App = () => {
   return (
-
     <Router>
       <div className="hero is-fullheight is-light is-bold has-text-centered">
         <Route exact path = '/' component={Header}/>
@@ -25,7 +24,6 @@ const App = () => {
         <Route path = '/' component={Footer}/>
       </div>
     </Router>
-
   )
 }
 
