@@ -1,0 +1,122 @@
+body{
+  text-align: center;
+  background-color: rgb(117, 114, 115);
+  font-family: 'Faster One', cursive;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+}
+
+.header {
+  font-family: 'Faster One', cursive;
+  font-size: 75px;
+  color: rgb(228, 228, 228);
+  padding: 1%;
+  width: 90%;
+  height: 100px;
+  margin: 10px auto;
+  border: 1px solid white;
+}
+
+.vid-container{ 
+  margin: auto;
+  padding: 1%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: goldenrod;
+  /* border: 1px solid rgb(212, 212, 212); */
+  /* width: 90%; */
+}
+
+.vid-main {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* flex-grow: 2; */
+  border: 1px solid white;
+  width: 65%;
+  margin-right: 20px;
+  height: 350px;
+}
+
+.vid-side {
+  /* flex-grow: 1; */
+  border: 1px solid white;
+  width: 20%;
+}
+
+.feedback-symbols {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 10px auto;
+  width: 90%;
+  height: 50px;
+  padding: 1%;
+  border: 1px solid white;
+}
+
+.symbols {
+  width: 80px;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.feedbacks {
+  margin: 10px auto;
+  padding: 1%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+}
+
+.neg-feedback {
+  padding: 0.5%;
+  border: 1px solid white;
+  width: 45%;
+  color: white;
+}
+
+#negs {
+  padding: 0.5%;
+  margin: 5px auto;
+  border: 1px solid white;
+  width: 80%;
+  height: 30px;
+}
+
+.pos-feedback {
+  padding: 0.5%;
+  border: 1px solid white;
+  width: 45%;
+  color: white;
+}
+
+#pos {
+  padding: 0.5%;
+  margin: 5px auto;
+  border: 1px solid white;
+  width: 80%;
+  height: 30px;
+}
+
+input{
+  width: 90%;
+  height: 100px;
+  text-align: center;
+}
+
+
+
+footer {
+  /* width: 100%; */
+  font-size: 12px;
+  height: 50px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.623);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
