@@ -12,7 +12,8 @@ const Lunch = () => {
   const lunches = values(data)[0]
 
 return (
-  <div>
+<div className="hero is-fullheight is-danger is-bold has-text-centered">
+  
     <h1>The Lunch Menu</h1>
     <ul>
       {lunches.map(lunch => {
@@ -21,10 +22,6 @@ return (
             <li>{lunch.name}</li>
             <li>{lunch.description}</li>
               <ul>
-                {lunch.ingredients.map(ingredient => {
-                  return <li key={ingredient.type}>
-                    {ingredient.type}
-                  </li>
                 })}
               </ul>
           </ul>
