@@ -6,7 +6,7 @@ const Main_con = () => {
   return (
       <div className="vid-container">
         <div className="vid-main">child of 
-          <iframe width="854" height="480" src="https://www.youtube.com/embed/FaOSCASqLsE" frameborder="0" allowfullscreen></iframe>
+          vid here
           </div>
         <div className="vid-side">child of Vid-con</div>
       </div>
