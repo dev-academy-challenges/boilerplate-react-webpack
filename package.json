@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "react-router-dom": "^4.2.2",
     "express": "^4.16.2",
     "superagent": "^3.6.3"
   }
