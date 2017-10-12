@@ -7,19 +7,30 @@ import Main_con from './Main_con'
 import Feedbacks from './Feedbacks'
 import Footer from './Footer'
 
-const App = () => {
-  return (
-  <Router>
-    <div className='app'>
-    <Route exact path='/' component={Header} />
-    <Route path='/' component={Main_con} />
-    {/* <Route path='/' component={Symbols} /> */}
-    <Route path='/' component={Feedbacks} /> 
-    <Route path='/' component={Footer} />
-    </div>
-  </Router>
-  )
+import vids from '../../db'
+
+class App extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      activeVidUrl: ''
+    }
+    this.showVideo = this.showVideo.bind(this)
+  }
+
+  showVideo () {
+    this.setState({
+      
+    })
+  }
+
+  render () {
+    return (
+      <div className="id-container">
+
+      </div>
+    )
+  }
 }
 
 export default App
-

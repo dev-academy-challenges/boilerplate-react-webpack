@@ -36,7 +36,7 @@ body{
   border: 1px solid white;
   width: 65%;
   margin-right: 20px;
-  height: 350px;
+  /* height: 350px; */
 }
 
 .vid-side {
@@ -104,7 +104,7 @@ body{
 
 input{
   width: 90%;
-  height: 100px;
+  /* height: 100px; */
   text-align: center;
 }
 
@@ -119,4 +119,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
