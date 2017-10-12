@@ -7,7 +7,8 @@
   "scripts": {
     "start": "webpack && node server",
     "dev": "nodemon --watch server & webpack --watch",
-    "test": "tape -r babel-register 'test/**/*.test.js' | tap-diff"
+    "test": "tape -r babel-register 'test/**/*.test.js' | tap-diff",
+    "knex": "knex"
   },
   "babel": {
     "presets": [
