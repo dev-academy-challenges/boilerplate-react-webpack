@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 import About from './About'
 
 const isActive = (path, route) => {
-  if (path == route) return "is-active tab"
-  else return "tab"
+  if (path == route) return 'is-active tab'
+  else return 'tab'
 }
 
 const Footer = (props) => {
@@ -19,9 +19,9 @@ const Footer = (props) => {
             <li className={isActive(path, '/')}><Link to="/">Overview</Link></li>
             <li className={isActive(path, '/about')}><Link to='/about'>About</Link></li>
             <li className={isActive(path, '/lunch')}><Link to='/lunch'>Lunch</Link></li>
-            <li><Link to='/people'>People</Link></li>
-            <li><Link to='/faq'>FAQ</Link></li>
-            <li><Link to='/contact'>Contact Us</Link></li>
+            <li className={isActive(path, '/people')}><Link to= '/people'>People</Link></li>
+            <li className={isActive(path, '/faq')}><Link to='/faq'>FAQ</Link></li>
+            <li className={isActive(path, '/contact')}><Link to='/contact'>Contact Us</Link></li>
           </ul>
         </div>
       </nav>
