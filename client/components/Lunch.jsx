@@ -1,8 +1,16 @@
 import React from 'react'
 
-const Lunch = () => {
+import data from '../../data/lunch'
+
+const Lunch = (props) => {
+
+  const mealData
+
+  console.log(data)
+
   return (
     <div>
+
     </div>
   )
 }
