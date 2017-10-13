@@ -57,13 +57,15 @@ body{
 }
 
 .symbols {
-  width: 80px;
+  width: 100px;
   height: 50px;
   background-color: white;
+  font-size: 14px;
   border-radius: 5px;
 }
 
 .feedbacks {
+  font-size: 15px;
   margin: 10px auto;
   padding: 1%;
   width: 90%;

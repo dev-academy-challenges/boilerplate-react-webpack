@@ -12,11 +12,11 @@ var vids = [{
   vidDesc: 'Acme Inc.',
   commentGood: 'That was amazing!',
   commentBad: 'That was terrible!',
-  knowledge: 2,
-  humour: 4,
-  useofBoard: 6,
-  flow: 8,
-  topic: 7
+  knowledge: 3,
+  humour: 7,
+  useofBoard: 8,
+  flow: 5,
+  topic: 2
 }, {
   id: 2,
   vidTitle: 'Richard\'s talk',
@@ -38,11 +38,11 @@ var vids = [{
   vidDesc: 'Acme Inc.',
   commentGood: 'That was amazing!',
   commentBad: 'That was terrible!',
-  knowledge: 2,
-  humour: 4,
-  useofBoard: 6,
-  flow: 8,
-  topic: 7
+  knowledge: 3,
+  humour: 9,
+  useofBoard: 8,
+  flow: 2,
+  topic: 4
 }, {
   id: 4,
   vidTitle: 'Andrea\'s talk',
@@ -51,11 +51,11 @@ var vids = [{
   vidDesc: 'Acme Inc.',
   commentGood: 'That was amazing!',
   commentBad: 'That was terrible!',
-  knowledge: 2,
-  humour: 4,
-  useofBoard: 6,
-  flow: 8,
-  topic: 7
+  knowledge: 4,
+  humour: 3,
+  useofBoard: 7,
+  flow: 5,
+  topic: 2
 },
 {
   id: 5,
@@ -65,11 +65,11 @@ var vids = [{
   vidDesc: 'Acme Inc.',
   commentGood: 'That was amazing! Probably the best out of any I have ever seen',
   commentBad: 'That was terrible!',
-  knowledge: 2,
+  knowledge: 6,
   humour: 4,
-  useofBoard: 6,
-  flow: 8,
-  topic: 7
+  useofBoard: 9,
+  flow: 2,
+  topic: 4
 }]
 
 function getVids () {
