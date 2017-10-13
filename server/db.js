@@ -10,16 +10,8 @@ var vids = [{
   vidUrl: 'https://www.youtube.com/embed/747-Q-WqLHc',
   vidPicUrl: '/images/horse.webp',
   vidDesc: 'Acme Inc.',
-  commentGood: [
-    {
-      comment: 'That was amazing!'
-    }
-  ],
-  commentBad: [
-    {
-      comment: 'That was terrible!'
-    }
-  ],
+  commentGood: 'That was amazing!',
+  commentBad: 'That was terrible!',
   knowledge: 2,
   humour: 4,
   useofBoard: 6,
@@ -31,16 +23,8 @@ var vids = [{
   vidUrl: 'https://www.youtube.com/embed/lTo0csITwN4',
   vidPicUrl: '/images/richard.gif',
   vidDesc: 'Acme Inc.',
-  commentGood: [
-    {
-      comment: 'That was amazing!'
-    }
-  ],
-  commentBad: [
-    {
-      comment: 'That was terrible!'
-    }
-  ],
+  commentGood: 'That was amazing!',
+  commentBad: 'That was terrible!',
   knowledge: 2,
   humour: 4,
   useofBoard: 6,
@@ -52,16 +36,8 @@ var vids = [{
   vidUrl: 'https://www.youtube.com/embed/uqmA4fg0zQQ',
   vidPicUrl: '/images/daz.gif',
   vidDesc: 'Acme Inc.',
-  commentGood: [
-    {
-      comment: 'That was amazing!'
-    }
-  ],
-  commentBad: [
-    {
-      comment: 'That was terrible!'
-    }
-  ],
+  commentGood: 'That was amazing!',
+  commentBad: 'That was terrible!',
   knowledge: 2,
   humour: 4,
   useofBoard: 6,
@@ -73,16 +49,8 @@ var vids = [{
   vidUrl: 'https://www.youtube.com/embed/V5N0Ukb8LGg',
   vidPicUrl: '/images/andrea.webp',
   vidDesc: 'Acme Inc.',
-  commentGood: [
-    {
-      comment: 'That was amazing!'
-    }
-  ],
-  commentBad: [
-    {
-      comment: 'That was terrible!'
-    }
-  ],
+  commentGood: 'That was amazing!',
+  commentBad: 'That was terrible!',
   knowledge: 2,
   humour: 4,
   useofBoard: 6,
@@ -95,16 +63,8 @@ var vids = [{
   vidUrl: 'https://www.youtube.com/embed/9cflCyyEA2I',
   vidPicUrl: '/images/don.webp',
   vidDesc: 'Acme Inc.',
-  commentGood: [
-    {
-      comment: 'That was amazing! Probably the best out of any I have ever seen'
-    }
-  ],
-  commentBad: [
-    {
-      comment: 'That was terrible!'
-    }
-  ],
+  commentGood: 'That was amazing! Probably the best out of any I have ever seen',
+  commentBad: 'That was terrible!',
   knowledge: 2,
   humour: 4,
   useofBoard: 6,
