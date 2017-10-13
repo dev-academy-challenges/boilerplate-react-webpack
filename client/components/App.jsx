@@ -26,11 +26,11 @@ class App extends React.Component {
     })
   }
 
-  handleListClick (vid) {
-    this.setState({
-      activeVid: vid
-    })
-  }
+  // handleListClick (vid) {
+  //   this.setState({
+  //     activeVid: vid
+  //   })
+  // }
 
   render () {
     return (
@@ -38,7 +38,7 @@ class App extends React.Component {
         <Header />
         <div className="vid-container">
           <ActiveVid video={this.state.activeVid} />
-          <VidList vids={this.state.vids}/>
+          <VidList vids={this.state.vids} showVideo={this.showVideo}/>
         </div>
       </div>
     )
