@@ -1,7 +1,7 @@
 
 exports.up = function(knex, Promise) {
   return knex.schema.createTableIfNotExists('cars_info', function (table) {
-    table.increments('id').primary();
+    table.increments().primary();
     table.string('name');
     table.string('year');
     table.string('body');
@@ -15,7 +15,7 @@ exports.up = function(knex, Promise) {
     table.string('engine');
     table.string('wof_exp');
     table.string('rego_exp');
-    table.string('image');
+    table.string('url');
   })
 };
 

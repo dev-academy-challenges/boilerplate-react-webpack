@@ -8,7 +8,7 @@ class Find extends React.Component {
     return (
       <div className='find'>
         <h2>Find a car</h2>
-
+          
       </div>
     )
   }
