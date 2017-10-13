@@ -38,7 +38,7 @@ class App extends React.Component {
         <Header />
         <div className="vid-container">
           <ActiveVid video={this.state.activeVid} />
-          <VidList vids={this.state.vids} showVideo={this.showVideo}/>
+          <VidList active={this.state.activeVid} vids={this.state.vids} showVideo={this.showVideo}/>
         </div>
       </div>
     )

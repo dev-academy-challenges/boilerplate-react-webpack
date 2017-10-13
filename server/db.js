@@ -88,6 +88,28 @@ var vids = [{
   useofBoard: 6,
   flow: 8,
   topic: 7
+},
+{
+  id: 5,
+  vidTitle: 'Don\'s talk',
+  vidUrl: 'https://www.youtube.com/embed/9cflCyyEA2I',
+  vidPicUrl: '',
+  vidDesc: 'Acme Inc.',
+  commentGood: [
+    {
+      comment: 'That was amazing! Probably the best out of any I have ever seen'
+    }
+  ],
+  commentBad: [
+    {
+      comment: 'That was terrible!'
+    }
+  ],
+  knowledge: 2,
+  humour: 4,
+  useofBoard: 6,
+  flow: 8,
+  topic: 7
 }]
 
 function getVids () {
