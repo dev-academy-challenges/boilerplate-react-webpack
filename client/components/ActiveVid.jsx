@@ -4,23 +4,19 @@ import { HashRouter as Router, Route } from 'react-router-dom'
 
 const ActiveVid = (props) => {
   return (
-    
-      <div className="vid-main">
-        <iframe width="854" height="480" src={props.video.vidUrl} frameBorder="0" allowFullScreen></iframe>
-      </div>
-     
-    
+
+    <div className="vid-main">
+      <iframe width="854" height="480" src={props.video.vidUrl} frameBorder="0" allowFullScreen></iframe>
+      <h1>{props.video.vidTitle}</h1>
+    </div>
+
+
   )
 }
-
-
 
 export default ActiveVid
 
 // https://www.youtube.com/embed/FaOSCASqLsE
-
-
-
 
 // class MainContainer extends React.Component {
 //   constructor (props) {
