@@ -1,6 +1,6 @@
 body{
   text-align: center;
-  background-color: rgb(117, 114, 115);
+  background-color: rgb(12, 18, 47);
   font-family: 'Faster One', cursive;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 12px;
@@ -33,7 +33,7 @@ body{
   justify-content: center;
   align-items: center; */
   /* flex-grow: 2; */
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 65%;
   margin-right: 20px;
   /* height: 350px; */
@@ -53,7 +53,7 @@ body{
   width: 90%;
   height: 50px;
   padding: 1%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .symbols {
@@ -76,7 +76,7 @@ body{
 
 .neg-feedback {
   padding: 0.5%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 45%;
   color: white;
 }
@@ -91,7 +91,7 @@ body{
 
 .pos-feedback {
   padding: 0.5%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 45%;
   color: white;
 }
