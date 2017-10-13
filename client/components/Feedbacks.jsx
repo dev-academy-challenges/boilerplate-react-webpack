@@ -1,6 +1,8 @@
 import React from 'react'
 
-import { HashRouter as Router, Route } from 'react-router-dom'
+import Rating from './Rating'
+import Comments from './Comments'
+// import { HashRouter as Router, Route } from 'react-router-dom'
 
 const Feedbacks = (props) => {
   return (
