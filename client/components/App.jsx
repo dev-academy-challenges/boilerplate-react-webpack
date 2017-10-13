@@ -26,19 +26,19 @@ class App extends React.Component {
     })
   }
 
-  handleListClick (vid) {
-    this.setState({
-      activeVid: vid
-    })
-  }
+  // handleListClick (vid) {
+  //   this.setState({
+  //     activeVid: vid
+  //   })
+  // }
 
   render () {
     return (
       <div className="app">
         <Header />
         <div className="vid-container">
-          <ActiveVid video={this.state.activeVid} />
-          <VidList vids={this.state.vids}/>
+          <ActiveVid video={this.state.activeVid} title={this.state.title}/>
+          <VidList active={this.state.activeVid} vids={this.state.vids} showVideo={this.showVideo}/>
         </div>
       </div>
     )
