@@ -40,6 +40,7 @@ class App extends React.Component {
           <ActiveVid video={this.state.activeVid} title={this.state.title}/>
           <VidList active={this.state.activeVid} vids={this.state.vids} showVideo={this.showVideo}/>
         </div>
+          <Footer />
       </div>
     )
   }

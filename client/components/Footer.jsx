@@ -3,9 +3,13 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer">
-      Team Unicorn
+    <footer className="footer">
+       <div className="">
+        <div className="content has-text-centered">
+          <p>
+          <strong>Team Unicorn</strong> 
+          </p>
+        </div>
       </div>
     </footer>
   )

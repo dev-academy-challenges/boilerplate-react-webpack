@@ -1,9 +1,9 @@
 body{
   text-align: center;
-  background-color: rgb(117, 114, 115);
+  background-color: rgb(12, 18, 47);
   font-family: 'Faster One', cursive;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .header {
@@ -14,7 +14,7 @@ body{
   width: 90%;
   height: 100px;
   margin: 10px auto;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .vid-container{ 
@@ -31,18 +31,26 @@ body{
 .vid-main {
   /* display: flex;
   justify-content: center;
-  align-items: center; */
-  /* flex-grow: 2; */
-  border: 1px solid white;
-  width: 65%;
+  align-items: center; 
+  flex-flow: row wrap; */
+  /* border: 1px solid white; */
+  width: 60%;
   margin-right: 20px;
   /* height: 350px; */
 }
 
+.box {
+  font-style: bold;
+}
+
 .vid-side {
-  /* flex-grow: 1; */
+  padding: 10px;
   border: 1px solid white;
-  width: 20%;
+  /* width: 20%; */
+}
+
+.box {
+  text-align: left;
 }
 
 .feedback-symbols {
@@ -108,22 +116,32 @@ input{
   text-align: center;
 }
 
+.footer {
+  background-color: rgb(12, 18, 47);
+}
 
+.footer p {
+  color: white;
+}
 
-footer {
+/* footer {
   /* width: 100%; */
   font-size: 12px;
-  height: 50px;
+  /* height: 50px; */
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.623);
+  background-color: rgb(12, 18, 47);
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 0;
   width: 100%;
-}
+} */
 
 /* .sideTitle {
   display: inline;
 } */
+
+.button {
+  margin: 10px;
+}
