@@ -4,11 +4,10 @@ import { Switch, Route, Link } from 'react-router-dom'
 
 class Car extends React.Component {
 
-  render() {
+  render(props) {
     return (
       <div className='car'>
-        <h2></h2>
-
+          
       </div>
     )
   }
