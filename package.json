@@ -44,7 +44,8 @@
     "express": "^4.14.0",
     "knex": "^0.13.0",
     "react-router-dom": "^4.2.2",
-    "sqlite3": "^3.1.13"
+    "sqlite3": "^3.1.13",
+    "superagent": "^3.6.3"
   },
   "bugs": {
     "url": "https://github.com/dev-academy-challenges/boilerplate-react-webpack/issues"
