@@ -14,7 +14,7 @@ class App extends React.Component {
   render () {
     return (
       <Router>
-        <div className="hero is-fullheight is-danger is-bold has-text-centered">
+        <div className="hero is-fullheight is-light is-bold has-text-centered">
           <Route exact path = '/' component={Header}/>
           <Route exact path = '/' component={Body}/>
           <Route path = '/about' component={About}/>
