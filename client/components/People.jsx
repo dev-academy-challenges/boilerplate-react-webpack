@@ -2,8 +2,8 @@ import React from 'react'
 
 const People = () => {
   return (
-    <div>
-    </div>
+
+    <img src='images/louis.jpg' alt='Louis'height='400' width='300'/>
 
   )
 }
