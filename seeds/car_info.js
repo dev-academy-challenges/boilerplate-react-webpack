@@ -1,10 +1,10 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('cars_info').del()
+  return knex('cars').del()
     .then(function () {
       // Inserts seed entries
-      return knex('cars_info').insert([
+      return knex('cars').insert([
         { id: 1, name: 'Mitsubishi Lancer Evolution VII', year: '2001', body: 'Sedan', seats: '5', origin: 'Japan', color: 'Red', transmission: 'Manual 5 speed', drive: 'Four wheel drive', odometer: '68,588 Kms', fuel: 'Petrol', engine: '2300cc', wof_exp: '11/10/2017', rego_exp: '21/10/2017', url: 'https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/16603060_1234716436618617_5469819718076108174_n.jpg?oh=b53639c7c97f3cd6b57118b64a552783&oe=5A887950' },
         { id: 2, name: 'Subaru Impreza', year: '2007', body: 'Station Wagon', seats: '5', origin: 'Japan', color: 'Grey', transmission: 'Tiptronic', drive: 'Front wheel drive', odometer: '117,100 Kms', fuel: 'Petrol', engine: '1490cc', wof_exp: '23/08/2018', rego_exp: '23/08/2018', url: 'https://upload.wikimedia.org/wikipedia/commons/1/19/2007_Subaru_Impreza_%28GH7_MY08%29_R_hatchback_%282015-07-09%29_01.jpg' },
         { id: 3, name: 'Nissan Skyline R34 GTR', year: '2001', body: 'Coupe', seats: '5', origin: 'Japan', color: 'Blue', transmission: 'Manual 6 speed', drive: 'Four wheel drive', odometer: '1000 Kms', fuel: 'Petrol', engine: '2600cc', wof_exp: 'N/A', rego_exp: 'N/A', url: 'http://torque-gt.co.uk/wordpress/wp-content/uploads/2017/01/21msKhkiyeDCghaCGJCqYgXsBoQXK62ypEBzz0zUqbUY3-gc5-7.jpg' },

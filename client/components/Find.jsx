@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 
+import CarNamePlate from './car-components/CarNamePlate.jsx'
 
 class Find extends React.Component {
 
@@ -8,10 +9,10 @@ class Find extends React.Component {
     return (
       <div className='find'>
         <h2>Find a car</h2>
-          
+          <CarNamePlate />
       </div>
     )
   }
 }
-
+  
 export default Find

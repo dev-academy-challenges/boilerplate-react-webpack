@@ -4,12 +4,16 @@ import { Switch, Route, Link } from 'react-router-dom'
 
 import Car from './Car'
 
-class Car extends React.Component {
+class CarNamePlate extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
 
   render(props) {
     return (
         <div className='car-name-plate'>
-          {props.names.map(name => {
+          {props.cars.map(name => {
             return (
               <Car />
             )
@@ -21,4 +25,4 @@ class Car extends React.Component {
   }
 }
 
-export default Car
+export default CarNamePlate
