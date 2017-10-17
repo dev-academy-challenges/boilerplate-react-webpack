@@ -6,9 +6,9 @@ router.use(bodyParser.json())
 const db = require('../db/db')
 
 
-router.get('/Cars', (req, res) => {
+router.get('/', (req, res) => {
   db.getCars()
-  .then(result => { res.json(result) })
+  .then(result => res.json(result) )
 })
 
 module.exports = router

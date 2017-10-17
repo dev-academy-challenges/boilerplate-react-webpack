@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Header from './Header.jsx'
 import Home from './Home.jsx'
@@ -20,9 +20,9 @@ class App extends React.Component {
           <div className='container'>
             <Switch>
             <Route exact path='/' component={() => <Home />} />
-            <Route path='/Find' component={Find} />
-            <Route path='/Contact' component={Contact} />
-            <Route path='/About' component={About} />
+            <Route path='/find' component={Find} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/about' component={About} />
             </Switch>
           </div>
           </div>

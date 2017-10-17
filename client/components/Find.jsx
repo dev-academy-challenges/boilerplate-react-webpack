@@ -3,6 +3,7 @@ import { Switch, Route, Link } from 'react-router-dom'
 
 import { getCars } from '.././client-api/index.js'
 import Cars from './carComponents/Cars.jsx'
+import {cars} from '../../seeds/cars.js'
 
 class Find extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class Find extends React.Component {
   fetchCars() {
    return getCars()
    .then(cars => {
-     this.setState({cars: cars})
+     this.setState({cars})
    })
   }
 
