@@ -13,11 +13,6 @@ class CarNamePlate extends React.Component {
   render(props) {
     return (
         <div className='car-name-plate'>
-          {props.cars.map(name => {
-            return (
-              <Car />
-            )
-          })}
           <span className='car-name'>{props.name}</span>
           <span className='car-year'>{props.year}</span>
         </div>

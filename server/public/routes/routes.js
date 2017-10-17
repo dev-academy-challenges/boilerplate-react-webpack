@@ -1,18 +1,15 @@
 const express = require('express')
-const db = require('../db/db')
-const bodyParser = require('body-parser')
-const request = require('superagent')
 const router = express.Router()
-
+const bodyParser = require('body-parser')
 router.use(bodyParser.json())
 
-router.get('/cars', (req, res) => {
+const db = require('../db/db')
+
+
+router.get('/Cars', (req, res) => {
   db.getCars()
-  .then(result => {
-    res.json(result)
-  })
+  .then(result => { res.json(result) })
 })
 
-module.exports = routes
-
+module.exports = router
 

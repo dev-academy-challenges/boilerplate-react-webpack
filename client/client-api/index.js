@@ -1,30 +1,12 @@
 import request from 'superagent'
 
 export function getCars() {
-  return request.get('v1/find')
-  .then(data => {
-    const cars = data.body
-    return cars.map(car => {
-      return Object.assign(
-        {},
-        car,
-        { name: JSON.parse(car.name) }
-      )
+  return request.get('/api/v1/Find/Cars')
+  .then(result => {
+    const cars = result.body
+    return cars
     })
       .catch(err => {
-        throw Error('Cannot GET Posts!')
+        throw Error('Cannot GET Cars!')
       })
-  })
-}
-
-
-export function getCarByCarId(carId) {
-  return request.get(`/v1/find/${carId}/car`)
-  .then(data => {
-    const returnedCar = data.body
-    return returnedCar
-  })
-  .catch(err => {
-    throw Error('Cannot GET Car By Car Id!')
-  })
 }
