@@ -11,7 +11,8 @@ export default [
 			'175 g bag nacho chips', 
 			'½ cup grated cheese',
 			'½ cup sour cream (optional)'
-		]
+		],
+		image: '/images/mexican.jpg'
 	},
 	{
 		id: 2,
@@ -28,8 +29,8 @@ export default [
 			'4 tomatoes, quartered', 
 			'600ml plant based milk', 
 			'Small bunch of coriander, finely chopped (include some stalks, which have lots of flavour)' 
-		]
-	
+		],
+		image: '/images/vegetarian.jpg'
 	},
 
 	{
@@ -45,7 +46,7 @@ export default [
 			'tim tams', 
 			'lollies', 
 			'fizzy drink' 
-		]
-		
+		],
+		image: '/images/classic.jpg'
 	}
 ]
