@@ -21,6 +21,7 @@ class App extends React.Component {
           <div className='container'>
             <Switch>
             <Route exact path='/' component={() => <Home />} />
+            <Route path="/view/:id" component={(props) => <SingleCar {...props} />} />
             <Route path='/find' component={Find} />
             <Route path='/contact' component={Contact} />
             <Route path='/about' component={About} />

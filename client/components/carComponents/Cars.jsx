@@ -7,7 +7,7 @@ function Cars (props) {
   const cars = props.cars
   console.log(props);
   return (
-    <div className='cars'>
+    <div className='cars columns is-desktop is-multiline'>
       {cars.map(car => {
         return (
           <Car car={car} />

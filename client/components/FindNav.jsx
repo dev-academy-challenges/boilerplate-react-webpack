@@ -6,7 +6,6 @@ function FindNav() {
   return (
     <div className='btm-nav'>
       <nav className="pagination" role="navigation" aria- label="pagination">
-        <a className="pagination-previous">Previous</a>
         <a className="pagination-next">Next page</a>
         <ul className="pagination-list">
           <li>
@@ -31,6 +30,7 @@ function FindNav() {
             <a className="pagination-link" aria-label="Goto page 86">86</a>
           </li>
         </ul>
+        <a className="pagination-previous">Previous</a>
       </nav>
     </div>
   )

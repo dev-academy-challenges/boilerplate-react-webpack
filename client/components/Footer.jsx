@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => (
   <div className='Footer'>
    <div className='copyright'>
-    <p>© 2017</p>    
+    <p>© 2017 SK I/E</p>    
   </div>
   <div className='content has-text-centered'>
     <p>

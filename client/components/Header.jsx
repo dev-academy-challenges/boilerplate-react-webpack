@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 // This might need to be turned into a stateful component (aka container)
 const Header = () => (
-  <div className='header hero is-primary is-medium'>
+  <div className='header hero is-info is-medium'>
     <div className='navbar-brand'>
-      <a className='navbar-item'><h1>SK imports & exporting</h1></a>
+      <a className='navbar-item' href='/'><h1>SK imports & exporting</h1></a>
     </div>
 
     <div className="hero-head">
@@ -19,11 +19,13 @@ const Header = () => (
             <a>Finance <i className="fa fa-chevron-down" aria-hidden="true"></i> </a>
             </span>
         <span className="navbar-item">
-            <a className="button is-primary is-inverted">
+            <a className="button is-info is-inverted">
+              <Link to='/Contact'>
             <span className="icon">
               <i className="fa fa-phone"></i>
             </span>
             <span>Enquire Today</span>
+            </Link>
           </a>
         </span>
       </div>
