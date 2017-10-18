@@ -11,11 +11,12 @@ function Car (props) {
     <p className='name'>{car.name}</p>
     <p className='year'>{car.year}</p>
     <div className="car-image">
-      <img src={car.url} alt="" height="400" width="300"></img>
+      <img src={car.url} alt="" height="400" width="600"></img>
     </div>
     <p>
-      <span className='body'>{car.body}</span>
-      <span className='seats'>{car.seats}</span>      
+      <span className='body'>Body type: {car.body}</span>
+      <br />
+      <span className='seats'>Seats: {car.seats}</span>      
     </p>
     </div>
   )

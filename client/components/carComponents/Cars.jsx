@@ -8,7 +8,6 @@ function Cars (props) {
   console.log(props);
   return (
     <div className='cars'>
-      <h4>Cars</h4>
       {cars.map(car => {
         return (
           <Car car={car} />

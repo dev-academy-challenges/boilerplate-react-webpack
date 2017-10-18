@@ -2,6 +2,7 @@ import React from 'react'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Header from './Header.jsx'
+import Footer from './Footer.jsx'
 import Home from './Home.jsx'
 import Find from './Find.jsx'
 import Contact from './Contact.jsx'
@@ -24,6 +25,9 @@ class App extends React.Component {
             <Route path='/contact' component={Contact} />
             <Route path='/about' component={About} />
             </Switch>
+          </div>
+          <div className='Footer'>
+            <Footer />
           </div>
           </div>
       </Router>
