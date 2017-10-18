@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 import lunches from '../../data/lunches'
 import Peeps from './Peeps'
-import Lunch from './Lunch'
+// import Lunch from './Lunch'
 
 class Lunches extends React.Component {
 	constructor (props) {
@@ -13,6 +13,7 @@ class Lunches extends React.Component {
 			lunches: lunches,
 			activeLunch: lunches[0]
 		}
+		this.handleLunchClick = this.handleLunchClick.bind(this)
 	}
 
 	handleLunchClick (lunch) {
@@ -30,19 +31,10 @@ class Lunches extends React.Component {
 						return <li key={lunch.id}>
 							<ul>
 								<li><Link to={`/lunches/lunch/${lunch.id}`}>{lunch.name}</Link></li>
-								{/* <li>{lunch.description}</li> */}
-								{/* <ul>
-                                    {lunch.ingredients.map(ingredient => {
-                                        return <li key={ingredient.type}>
-                                            {ingredient.type}
-                                        </li>
-                                    })}
-                                </ul> */}
 							</ul>
 						</li>
 					})}
 				</ul>
-				<Route path='/lunches/lunch/:id' component={Lunch}/>
 			</div>
 		)
 	}

@@ -20,8 +20,7 @@ const Footer = (props) => {
 						<li className={isActive(path, '/about')}><Link to='/about'>About</Link></li>
 						<li className={isActive(path, '/lunches')}><Link to='/lunches'>Lunch</Link></li>
 						<li className={isActive(path, '/people')}><Link to= '/people'>People</Link></li>
-            <li className={isActive(path, '/peeps')}><Link to= '/peeps'>Add Yourself</Link></li>
-						<li className={isActive(path, '/faq')}><Link to='/faq'>FAQ</Link></li>
+						<li className={isActive(path, '/peeps')}><Link to= '/peeps'>Add Yourself</Link></li>
 						<li className={isActive(path, '/contact')}><Link to='/contact'>Contact Us</Link></li>
 					</ul>
 				</div>

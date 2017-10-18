@@ -1,8 +1,12 @@
 import React from 'react'
 
-const PeopleList = () => {
+const PeopleList = (props) => {
 	return (
-		<div></div>
+		<div className="holder">
+			{props.people.map((person, i) =>
+				<div key={i} className="people">{person}</div>
+			)}
+		</div>
 
 	)
 }

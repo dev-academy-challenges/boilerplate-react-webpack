@@ -6,22 +6,28 @@ export default class Peeps extends React.Component {
 		super (props)
 		this.state = {
 			peopleComing: ' ',
-			people: ['test']
+			people: ['Harold']
 		}
 
 		this.addToList = this.addToList.bind(this)
+		this.Peeps = this.Peeps.bind(this)
+		this.updatePeopleList = this.updatePeopleList.bind(this)
 	}
 
 
 	addToList(e) {
 		e.preventDefault()
-		this.handleAdd(this.state.userPhrase)
+		this.Peeps(this.state.peopleComing)
 	}
 
 	Peeps (person) {
 		const {people} = this.state
 		people.push(person)
 		this.setState({people, peopleComing: ''})
+	}
+    
+	updatePeopleList(e) {
+		this.setState({ peopleComing: e.target.value })
 	}
 
 	render() {
@@ -38,7 +44,7 @@ export default class Peeps extends React.Component {
 					</form>
 				</div>
        
-				<PeopleList People={this.state.people} />
+				<PeopleList people={this.state.people} />
 			</div>
 		)
 	}}
