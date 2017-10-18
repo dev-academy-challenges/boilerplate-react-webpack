@@ -24,6 +24,8 @@
     "babel-preset-react": "^6.16.0",
     "babel-register": "^6.18.0",
     "enzyme": "^2.7.0",
+    "eslint": "^4.9.0",
+    "eslint-plugin-react": "^7.4.0",
     "jsx-loader": "^0.13.2",
     "nodemon": "^1.11.0",
     "react": "^15.4.2",
