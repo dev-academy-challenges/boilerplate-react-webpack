@@ -17,8 +17,11 @@ const People = () => {
 			<article className="tile is-child notification is-info">
 				<p className="title">Our People</p>
 				<p className="subtitle">Louis</p>
+				<div className="content">
+					Louis enjoys pats and being feed. He is also happy to sit on your lap while you code. 
+				</div>
 
-				<img src='images/louis.jpg' alt='Louis' />
+				<img src='images/louis2.jpg' alt='Louis' />
 
 			</article>
 		</div>

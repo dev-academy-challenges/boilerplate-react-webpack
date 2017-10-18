@@ -1,15 +1,20 @@
 import React from 'react'
 // import { Link, Route } from 'react-router-dom'
-import data from '../../data/lunches'
+import lunches from '../../data/lunches'
 
-const Lunch = () => {
-	// const id = props.match.params.id
-
+const Lunch = (props) => {
+	const id = Number(props.match.params.id)
+	const lunch = lunches.find((lunch) => lunch.id === id)
 	return (
-		<div className="holder">
-			{data.map((lunch) => 
-				<div key={lunch.id} className="lunches">{lunch.description}{lunch.ingredients}</div>	
-			)}
+		<div>
+			<div>
+				{lunch.description}
+			</div>
+			<div className="holder">
+				{lunch.ingredients.map((ingredient) => 
+					<div key={ingredient} className="ingredients">{ingredient}</div>	
+				)}
+			</div>
 		</div>
 
 	)

@@ -1,27 +1,7 @@
 import React from 'react'
 
-class Contact extends React.Component {
-	// constructor(props) {
-	// 	super(props)
-	// 	this.state = {
-	// 		Name: '',
-	// 		Username: '',
-	// 		Subject: '',
-	// 		Message: ''
-	// 	} 
-	// 	// this.handleSubmitClick = this.handleSubmitClick.bind(this)
-	// }
-	
-	// handleSubmitClick(e) {
-	// 	this.setState({
-	// 		Name: e.taget.value,
-	// 		Username: e.taget.value,
-	// 		Subject: e.taget.value,
-	// 		Message: e.taget.value
-	// 	})
-	
-
-	return ({
+const Contact = () => {
+	return (
 		<div>
 			<div className="section has-text-centered field">
 				<label className="label">Name</label>
@@ -109,7 +89,6 @@ class Contact extends React.Component {
 			</div>
 		</div>
 	)
-}
 }
 
 export default Contact
