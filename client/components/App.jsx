@@ -17,7 +17,7 @@ class App extends React.Component {
           <div className='header'>
           <Header />
           </div>
-            <hr/>
+            <hr />
           <div className='container'>
             <Switch>
             <Route exact path='/' component={() => <Home />} />
@@ -26,7 +26,8 @@ class App extends React.Component {
             <Route path='/about' component={About} />
             </Switch>
           </div>
-          <div className='Footer'>
+            <hr className='footer-seperator' />
+          <div className='footer'>
             <Footer />
           </div>
           </div>

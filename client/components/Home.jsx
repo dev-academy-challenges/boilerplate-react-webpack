@@ -5,8 +5,11 @@ class Home extends React.Component {
   
   render () {
     return (
-      <h2>Home page</h2>
-      
+      <div className='container'>
+        <section class="section">
+        <h2 className='title'>Home page</h2>
+        </section>
+      </div>
     )
   }
 }

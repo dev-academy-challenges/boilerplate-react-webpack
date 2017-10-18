@@ -7,20 +7,18 @@ function Car (props) {
 
   // console.log(car)
   return (
-    <div className='car'>
-    <p className='name'>{car.name}</p>
-    <p className='year'>{car.year}</p>
-    <div className="car-image">
-      <img src={car.url} alt="" height="400" width="600"></img>
-    </div>
-    <p>
-      <span className='body'>Body type: {car.body}</span>
-      <br />
-      <span className='seats'>Seats: {car.seats}</span>      
-    </p>
+    <div className="tile is-parent">
+      <article className="tile is-child box">
+        <a><p className="title">{car.name}</p></a>
+        <a><p className="subtitle">{car.year}</p></a>
+      <figure className="image is-128x128">
+        <a><img src={car.url} alt=""></img></a>
+        </figure>
+      </article>
     </div>
   )
 }
+
 
 Car.defaultProps = {
   car: {
@@ -43,4 +41,4 @@ Car.defaultProps = {
 }
 export default Car
 
- 
+  

@@ -7,6 +7,7 @@ class Nav extends React.Component {
     return (
     <div className='filter-nav'>
       <h3>Filter options</h3>
+      <div className='type'>
       <ul>
         <li>1</li>
         <li>2</li>
@@ -15,6 +16,7 @@ class Nav extends React.Component {
         <li>5</li>
         <li>6</li>
       </ul>
+      </div>
     </div>
     )
   }

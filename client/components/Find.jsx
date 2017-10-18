@@ -1,8 +1,9 @@
 import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 
-import { getCars } from '.././client-api/index.js'
 import Cars from './carComponents/Cars.jsx'
+import FindNav from './FindNav.jsx'
+import { getCars } from '.././client-api/index.js'
 import {cars} from '../../seeds/cars.js'
 
 class Find extends React.Component {
@@ -31,10 +32,13 @@ class Find extends React.Component {
       <div className='find'>
       <div className='title'>
         <h2>Find a car</h2>
-      </div>
         <div className='cars-list'>
-        <Cars cars={cars} />
+         <Cars cars={cars} />
         </div>
+        <div className='btm-nav'>
+          <FindNav />
+        </div>
+      </div>
       </div>
     )
   }
