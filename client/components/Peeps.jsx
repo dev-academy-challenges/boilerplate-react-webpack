@@ -6,7 +6,8 @@ export default class Peeps extends React.Component {
 		super (props)
 		this.state = {
 			peopleComing: ' ',
-			people: ['Harold']
+			food: '',
+			people: [{name: 'Harold', food: 'Cake'}]
 		}
 
 		this.addToList = this.addToList.bind(this)
@@ -17,18 +18,22 @@ export default class Peeps extends React.Component {
 
 	addToList(e) {
 		e.preventDefault()
-		this.Peeps(this.state.peopleComing)
+		this.Peeps({name: this.state.peopleComing, food: this.state.food})
 	}
 
 	Peeps (person) {
 		const {people} = this.state
 		people.push(person)
-		this.setState({people, peopleComing: ''})
+		this.setState({people, peopleComing: '', food: ''})
 	}
     
 	updatePeopleList(e) {
 		this.setState({ peopleComing: e.target.value })
 	}
+	updateFood(e) {
+		this.setState({food: e.target.value})
+	}
+
 
 	render() {
 		return ( 
@@ -39,6 +44,7 @@ export default class Peeps extends React.Component {
 					<form onSubmit={this.addToList}>
 
 						<input name="peopleComing" type='text' onChange={this.updatePeopleList} placeholder='Wanna join?' value={this.state.peopleComing} />
+						<input name="food" type='text' onChange={this.updateFood.bind(this)} placeholder={'Watcha Bringin\'?'} value={this.state.food} />
 						<br />
 						<input type="submit" value="Add new person" />
 					</form>
