@@ -8,8 +8,8 @@ const Lunch = (props) => {
 	return (
 		<div>
 			<div>
-				{lunch.description}
-				<img src={lunch.image} alt='Lunch' />
+				{lunch.description}<br/>
+				<img src={lunch.image}className='classic' alt='Lunch' />
 			</div>
 			<div className="holder">
 				{lunch.ingredients.map((ingredient) => 

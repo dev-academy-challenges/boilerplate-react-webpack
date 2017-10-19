@@ -21,7 +21,7 @@ const People = () => {
 					Louis enjoys pats and being feed. He is also happy to sit on your lap while you code. 
 				</div>
 
-				<img src='images/louis2.jpg' alt='Louis' />
+				<img src='images/LouisSkye.jpg' alt='Louis' />
 
 			</article>
 		</div>

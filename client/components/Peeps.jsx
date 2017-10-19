@@ -13,6 +13,7 @@ export default class Peeps extends React.Component {
 		this.addToList = this.addToList.bind(this)
 		this.Peeps = this.Peeps.bind(this)
 		this.updatePeopleList = this.updatePeopleList.bind(this)
+		this.updateFood = this.updateFood.bind(this)
 	}
 
 
@@ -37,14 +38,16 @@ export default class Peeps extends React.Component {
 
 	render() {
 		return ( 
-			<div className='container'>
-				<div className='People Going to Lunch'></div>
-				<div className='adding-yourself'>
+			<div className='field'>
+				<label class="label">Name</label><label class="label">      Food</label>
+				<div class="control">
 
 					<form onSubmit={this.addToList}>
 
-						<input name="peopleComing" type='text' onChange={this.updatePeopleList} placeholder='Wanna join?' value={this.state.peopleComing} />
-						<input name="food" type='text' onChange={this.updateFood.bind(this)} placeholder={'Watcha Bringin\'?'} value={this.state.food} />
+						<input name="peopleComing" type='text' onChange={this.updatePeopleList} placeholder='Wanna join?'value={this.state.peopleComing} />
+
+
+						<input name="food" type='text' onChange={this.updateFood} placeholder={'Watcha Bringin\'?'} value={this.state.food} />
 						<br />
 						<input type="submit" value="Add new person" />
 					</form>
