@@ -11,5 +11,8 @@ router.get('/', (req, res) => {
   .then(result => res.json(result) )
 })
 
+router.get('/view/:id', (req, res) => {
+  db.getCar()
+})
 module.exports = router
 

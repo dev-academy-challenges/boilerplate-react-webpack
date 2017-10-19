@@ -8,13 +8,13 @@ function View(props) {
 
   // console.log(car)
   return (
-    <div className="column has-text-centered is-half-desktop tile is-parent">
-      <article className="tile is-child box">
-        <figure className="image">
-          <a><img src={car.url} alt=""></img></a>
-        </figure>
-      </article>
-    </div>
+    // <div className="column has-text-centered is-half-desktop tile is-parent">
+    //   <article className="tile is-child box">
+    //     <figure className="image">
+    //       <a><img src={car.url} alt=""></img></a>
+    //     </figure>
+    //   </article>
+    // </div>
   )
 }
 

@@ -7,6 +7,10 @@ function getCars () {
   .select()
 }
 
+function getCar (id) {
+  return knex('cars').where('id',id).first()
+}
+
 module.exports = {
   getCars: getCars
 }

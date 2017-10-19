@@ -6,10 +6,10 @@ class Home extends React.Component {
   render () {
     return (
       <div className='container'>
-        <section class="section">
+        <section className="section">
         <h2 className='title is-1'>Home page</h2>
           <div className='banner has-text-centered'>
-            <figure class="image is-2by1">
+            <figure className="image is-2by1">
               <img src="https://www.platinummotors.in/wp-content/uploads/2017/05/Used-Cars.jpg" />
             </figure>
           </div>

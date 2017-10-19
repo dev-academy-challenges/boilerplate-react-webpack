@@ -5,9 +5,7 @@ import View from './SingleCar.jsx'
 
 function Car (props) {
   const car = props.car
-  // const { id, name, year, body, seats, origin, color, transmission, drive, odometer, fuel, engine, wof_exp, rego_exp, url } = props.car
 
-  // console.log(car)
   return (
     <div className="column has-text-centered is-half-desktop tile is-parent">
       <article className="tile is-child box">
