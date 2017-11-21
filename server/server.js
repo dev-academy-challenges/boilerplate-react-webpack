@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const bodyParser = require('body-parser')
 
-const cars = require('./public/routes/routes.js')
+const cars = require('./routes/routes.js')
 const server = express()
 
 server.use(bodyParser.json())
