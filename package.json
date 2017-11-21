@@ -42,12 +42,13 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "bulma": "^0.6.0",
+    "cors": "^2.8.4",
     "express": "^4.14.0",
     "knex": "^0.13.0",
     "react-router-dom": "^4.2.2",
     "reactbulma": "^1.1.0",
     "sqlite3": "^3.1.13",
-    "superagent": "^3.6.3"
+    "superagent": "^3.8.1"
   },
   "bugs": {
     "url": "https://github.com/dev-academy-challenges/boilerplate-react-webpack/issues"

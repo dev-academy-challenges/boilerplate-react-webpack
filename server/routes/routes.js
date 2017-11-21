@@ -1,18 +1,21 @@
 const express = require('express')
 const router = express.Router()
-const bodyParser = require('body-parser')
-router.use(bodyParser.json())
+const request = require('superagent')
 
-const db = require('../db/db')
+const {getCar, getCars} = require('../db/cars')
 
 
 router.get('/', (req, res) => {
-  db.getCars()
-  .then(result => res.json(result) )
+  getCars()
+    .then(result => res.json(result))
+    .catch(err => res.status(err).end)  
 })
 
 router.get('/view/:id', (req, res) => {
-  db.getCar()
+  let {id} = req.params
+  getCar(id)
+    .then(result => res.json(result))
+    .catch(err => res.status(err).end)
 })
 module.exports = router
 
