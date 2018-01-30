@@ -6,7 +6,7 @@
   "main": "server/index.js",
   "scripts": {
     "start": "webpack && node server",
-    "dev": "node --watch server & webpack --watch",
+    "dev": "node server & webpack --watch",
     "test": "jest --watch --noStackTrace"
   },
   "babel": {
