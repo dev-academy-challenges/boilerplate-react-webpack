@@ -20,6 +20,7 @@ class Form extends React.Component {
   handleSubmit (evt) {
     this.props.addName('hufflepuff', this.state)
     this.setState({
+      houseName: '',
       name: '',
       starSign: ''
     })

@@ -30,6 +30,7 @@ class App extends React.Component {
   addName (house, name) {
     this.setState({
       [house]: {
+        houseName: this.state[house].houseName,
         names: [...this.state[house].names, name]
       }
     })
