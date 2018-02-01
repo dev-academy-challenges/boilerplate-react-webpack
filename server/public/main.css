@@ -70,9 +70,10 @@ h1{
     justify-content: center; 
     margin: 0 auto;
     height: 800px; 
-    left: 800px;
+    left: 600px;
     top: 100px;
     position: absolute;
+    flex-direction: column;
 }
 .paper{
     max-height: 100%;
@@ -81,5 +82,16 @@ h1{
 }
 
 .app{
-    position:absolute; z-index: -2;
+ z-index: -2;
+}
+
+.crest{
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto;
+    top: -100px;
+    width: 120px;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%; 
 }
