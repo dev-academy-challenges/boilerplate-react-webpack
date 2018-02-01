@@ -1,0 +1,15 @@
+body {
+    background-image: url('/images/greatHall.jpg');
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: 'mickey_script';
+    src: url("/font/mickey_script.ttf");
+}
+
+h1{
+    font-family: 'mickey_script';
+    font: 100;
+}
