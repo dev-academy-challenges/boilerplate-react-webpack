@@ -18,8 +18,9 @@ class Form extends React.Component {
   }
 
   handleSubmit (evt) {
-    this.props.addName(this.state)
+    this.props.addName('hufflepuff', this.state)
     this.setState({
+      houseName: '',
       name: '',
       starSign: ''
     })

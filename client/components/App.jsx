@@ -7,14 +7,32 @@ class App extends React.Component {
   constructor () {
     super()
     this.state = {
-      names: []
+      hufflepuff: {
+        houseName: 'Hufflepuff',
+        names: []
+      },
+      slytherin: {
+        houseName: 'Slytherin',
+        names: []
+      },
+      gryffindor: {
+        houseName: 'Gryffindor',
+        names: []
+      },
+      ravenclaw: {
+        houseName: 'Ravenclaw',
+        names: []
+      }
     }
     this.addName = this.addName.bind(this)
   }
 
-  addName (name) {
+  addName (house, name) {
     this.setState({
-      names: [...this.state.names, name]
+      [house]: {
+        houseName: this.state[house].houseName,
+        names: [...this.state[house].names, name]
+      }
     })
   }
 
@@ -23,7 +41,10 @@ class App extends React.Component {
       <div>
         <h1>Sorting Hat</h1>
         <Form addName={this.addName} />
-        <NameList names={this.state.names} />
+        <NameList house={this.state.hufflepuff} />
+        <NameList house={this.state.slytherin} />
+        <NameList house={this.state.gryffindor} />
+        <NameList house={this.state.ravenclaw} />
       </div>
     )
   }
