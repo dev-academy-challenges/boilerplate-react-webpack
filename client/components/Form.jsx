@@ -19,7 +19,7 @@ class Form extends React.Component {
   }
 
   handleSubmit (evt) {
-    const dest = (this.state.name.length + Number(this.state.starSign)) % 4
+    const dest = (this.state.name.length + Number(this.state.starSign) + Number(this.state.maccas)) % 4
     let house = ''
     switch (dest) {
       case 0:
@@ -52,6 +52,7 @@ class Form extends React.Component {
           <label htmlFor='Name'>Name</label>
           <input
             type='text'
+            required='required'
             className=''
             name='name'
             onChange={this.handleChange}
@@ -77,7 +78,8 @@ class Form extends React.Component {
         <div>
           <label>
             <input
-              type='radio' value='0' checked={this.state.selectedOption === '0'} />
+              type='radio' name='maccas' value='0' /* checked={this.state.selectedOption === '0'} */
+              onChange={this.handleChange} />
             Chicken nuggets
           </label>
         </div>
@@ -85,7 +87,8 @@ class Form extends React.Component {
         <div>
           <label>
             <input
-              type='radio' value='1' />
+              type='radio' name='maccas' value='1' /* checked={this.state.selectedOption === '1'} */
+              onChange={this.handleChange} />
             Cheeseburger
           </label>
         </div>
@@ -93,7 +96,8 @@ class Form extends React.Component {
         <div>
           <label>
             <input
-              type='radio' value='2' />
+              type='radio' name='maccas' value='2' /* checked={this.state.selectedOption === '2'} */
+              onChange={this.handleChange} />
             Big Mac
           </label>
         </div>
@@ -101,7 +105,8 @@ class Form extends React.Component {
         <div>
           <label>
             <input
-              type='radio' value='3' />
+              type='radio' name='maccas' value='3' /* checked={this.state.selectedOption === '3'} */
+              onChange={this.handleChange} />
             Hash browns
           </label>
         </div>
