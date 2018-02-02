@@ -1,4 +1,5 @@
 import React from 'react'
+import starSigns from './astrology'
 
 class Form extends React.Component {
   constructor (props) {
@@ -18,13 +19,32 @@ class Form extends React.Component {
   }
 
   handleSubmit (evt) {
-    this.props.addName('hufflepuff', this.state)
+    const dest = (this.state.name.length + Number(this.state.starSign)) % 4
+    let house = ''
+    switch (dest) {
+      case 0:
+        house = 'gryffindor'
+        break
+      case 1:
+        house = 'ravenclaw'
+        break
+      case 2:
+        house = 'hufflepuff'
+        break
+      case 3:
+        house = 'slytherin'
+        break
+    }
+
+    this.props.addName(house, this.state)
     this.setState({
       houseName: '',
       name: '',
-      starSign: ''
+      starSign: '',
+      maccas: ''
     })
   }
+
   render () {
     return (
       <form autoComplete='on'>
@@ -37,6 +57,55 @@ class Form extends React.Component {
             onChange={this.handleChange}
             value={this.state.name} />
         </div>
+
+        <div>
+          <select
+            name='starSign'
+            placeholder='Please select...'
+            className=''
+            onChange={this.handleChange}>
+            {starSigns.map(opt => {
+              return <option
+                key={opt.id}
+                value={opt.id}>
+                {`${opt.sign} (${opt.startDate}\u2192)`}
+              </option>
+            })}
+          </select>
+        </div>
+
+        <div>
+          <label>
+            <input
+              type='radio' value='0' checked={this.state.selectedOption === '0'} />
+            Chicken nuggets
+          </label>
+        </div>
+
+        <div>
+          <label>
+            <input
+              type='radio' value='1' />
+            Cheeseburger
+          </label>
+        </div>
+
+        <div>
+          <label>
+            <input
+              type='radio' value='2' />
+            Big Mac
+          </label>
+        </div>
+
+        <div>
+          <label>
+            <input
+              type='radio' value='3' />
+            Hash browns
+          </label>
+        </div>
+
         <button type='button' onClick={this.handleSubmit}>Sort!</button>
       </form>
     )

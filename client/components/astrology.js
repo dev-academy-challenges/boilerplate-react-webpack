@@ -1,7 +1,7 @@
 // Note:
 // To add right arrow after startDates, use \u2192
 
-export const starSigns = [
+const starSigns = [
   {
     id: 1,
     sign: 'Aries',
@@ -78,3 +78,5 @@ export const starSigns = [
 //    </option>
 //  </select>
 //})
+
+export default starSigns
