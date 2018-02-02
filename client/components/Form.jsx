@@ -49,7 +49,7 @@ class Form extends React.Component {
     return (
       <form autoComplete='on'>
         <div>
-          <label htmlFor='Name'>Name</label>
+          <label htmlFor='Name'>Name: </label>
           <input
             type='text'
             required='required'
@@ -58,7 +58,7 @@ class Form extends React.Component {
             onChange={this.handleChange}
             value={this.state.name} />
         </div>
-
+        <br />
         <div>
           <select
             name='starSign'
@@ -74,7 +74,7 @@ class Form extends React.Component {
             })}
           </select>
         </div>
-
+        <br />
         <div>
           <label>
             <input
@@ -110,7 +110,7 @@ class Form extends React.Component {
             Hash browns
           </label>
         </div>
-
+        <br />
         <button type='button' onClick={this.handleSubmit}>Sort!</button>
       </form>
     )
