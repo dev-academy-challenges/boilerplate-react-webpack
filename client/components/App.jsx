@@ -4,7 +4,7 @@ import Form from './Form.jsx'
 import NameList from './NameList.jsx'
 
 class App extends React.Component {
-  constructor() {
+  constructor () {
     super()
     this.state = {
       hufflepuff: {
@@ -27,7 +27,7 @@ class App extends React.Component {
     this.addName = this.addName.bind(this)
   }
 
-  addName(house, name) {
+  addName (house, name) {
     this.setState({
       [house]: {
         houseName: this.state[house].houseName,
@@ -36,23 +36,23 @@ class App extends React.Component {
     })
   }
 
-  render() {
+  render () {
     return (
       <div className='app'>
         <div className='crest'>
           {/* <img className='crest' src="../images/sortingHat.png" alt="crest"/> */}
-          </div>
-          <div className='sorting'>
-            <img className='paper' src="../images/paper2.png" alt="paper"/>
-              </div>
-            <h1>Sorting Hat</h1>
-            <Form addName={this.addName} />
-            <NameList house={this.state.hufflepuff} />
-            <NameList house={this.state.slytherin} />
-            <NameList house={this.state.gryffindor} />
-            <NameList house={this.state.ravenclaw} />
-          </div>
-          )
+        </div>
+        <div className='sorting'>
+          <img className='paper' src="../images/paper2.png" alt="paper"/>
+        </div>
+        <h1>Hogwarts Sorting Hat</h1>
+        <Form addName={this.addName} />
+        <NameList house={this.state.hufflepuff} />
+        <NameList house={this.state.slytherin} />
+        <NameList house={this.state.gryffindor} />
+        <NameList house={this.state.ravenclaw} />
+      </div>
+    )
   }
 }
 
