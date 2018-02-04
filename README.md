@@ -13,3 +13,4 @@ cd [your-app] && yarn
 To start the development server with a watcher that rebuilds your code, run `yarn dev`. The assets built by webpack are placed in `server/public`. This folder is defined as a static folder in an Express.js server that can be started with `npm run server`.
 
 Additional components should be placed in `client/components`.
+
