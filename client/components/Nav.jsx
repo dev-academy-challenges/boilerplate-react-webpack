@@ -9,7 +9,13 @@ function Nav () {
             <Link to='/' className='pure-button'>Home</Link>
           </li>
           <li className='nav-item'>
-            <Link to='/posts/new' className='pure-button'>Add Post</Link>
+            <Link to='/portfolio' className='pure-button'>PortFolio</Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/posts/new' className='pure-button'>Blog</Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/contact' className='pure-button'>Contact</Link>
           </li>
         </ul>
       </nav>
