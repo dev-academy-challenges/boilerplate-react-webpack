@@ -1,50 +1,52 @@
-body {
+ /* body {
   background-image: url('./images/rubybeach.png');
   background-size: 85%;
   background-repeat: no-repeat;
-}
+}  */
 
-.body-container {
+ /* .body-container {
   display: flex;
-}
+} */
 
 .header {
+  background-image: url('./images/rubybeach.png');\
+  background-size: cover;
   margin-bottom: 2em;
   text-align: center;
 }
 
-.footer {
+/* .footer {
   margin-top: 4em;
   text-align: center;
-}
+} */
 
 /* Posts */
-
-.posts .date,
+ 
+/* .posts .date,
 .posts .comment-count {
   color: gray;
-}
+} */
 
 /* Recent entries */
 
-.recent-entries {
+/* .recent-entries {
   margin-top: 4em;
   margin-left: 2em;
   flex-basis: 20%;
-}
+} */
 
-.recent-entries header {
+/* .recent-entries header {
   font-weight: bold;
-}
+} */
 
-.recent-entries ul {
+/* .recent-entries ul {
   margin-left: -2em;
-}
+} */
 
-.recent-entries li {
+/* .recent-entries li {
   list-style: none;
   margin-bottom: 1em;
-}
+}  */
 
 /* NAV BAR THAT STICKS IN SPOT! */
 
