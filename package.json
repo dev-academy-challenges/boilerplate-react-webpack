@@ -6,7 +6,7 @@
   "main": "server/index.js",
   "scripts": {
     "start": "webpack && node server",
-    "dev": "node server --watch & webpack --watch",
+    "dev": "nodemon --watch server & webpack --watch",
     "test": "jest --watch --noStackTrace"
   },
   "babel": {
@@ -31,6 +31,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.1.4",
+    "nodemon": "^1.14.12",
     "react": "^16.2.0",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.2.0",
