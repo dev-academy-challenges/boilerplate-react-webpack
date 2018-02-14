@@ -1,13 +1,15 @@
 {
   "name": "boilerplate-react-webpack",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A webpack React starter",
   "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
   "main": "server/index.js",
+  "author": "EDA",
+  "license": "ISC",
   "scripts": {
     "start": "webpack && node server",
     "dev": "node server & webpack --watch",
-    "test": "jest --watch --noStackTrace"
+    "test": "jest --watchAll"
   },
   "babel": {
     "presets": [
@@ -15,8 +17,11 @@
       "react"
     ]
   },
-  "author": "EDA",
-  "license": "ISC",
+  "jest": {
+    "setupFiles": [
+      "./tests/setup.js"
+    ]
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2"
@@ -31,7 +36,6 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.1.4",
     "react": "^16.2.0",
-    "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.2.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
