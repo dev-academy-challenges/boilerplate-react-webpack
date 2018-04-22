@@ -1,4 +1,5 @@
 import React from 'react'
+import SignUp from './SignUp'
 import {Link} from 'react-router-dom'
 
 const Login = () => {
@@ -16,7 +17,9 @@ const Login = () => {
                       </div>
                     </div>
                     <input className="button-primary" type="submit" value="Login" />
-                    <input className="button-primary" type="submit" value="Sign up" />
+                    <Link to={`/usersignup`}>
+                     <input className="button-primary" type="submit" value="Sign up" />
+                    </ Link>
             </form>
                   {/* <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% --> */}
     </div>
