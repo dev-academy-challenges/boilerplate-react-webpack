@@ -7,6 +7,7 @@ import Login from './Login'
 import Why from './Why'
 import BottomNav from './BottomNav'
 import Footer from './Footer'
+import SignUp from './SignUp'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route exact path='/' component={Why} />
         <Route exact path='/' component={BottomNav} />
         <Route exact path='/' component={Footer} />
+        <Route path='/usersignup' component={SignUp} />
     </div>
     </Router>
   )
