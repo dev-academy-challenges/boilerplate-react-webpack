@@ -1,14 +1,16 @@
 # SPCA-Street-Appeal
 
 ## Set Up
+```
 yarn
-yarn init
+```
+
 
 
 ## MVP
 
-Stage 1 - Users are a. Area Coordinator and b. SPCA Fundraising Manager.
-Stage 2 - Users are a. Area Coordinator, b. SPCA Fundraising Manager and c. Volunteer.
+* Stage 1 - Users are a. Area Coordinator and b. SPCA Fundraising Manager.
+* Stage 2 - Users are a. Area Coordinator, b. SPCA Fundraising Manager and c. Volunteer.
 
 
 ### STAGE 1
@@ -40,11 +42,11 @@ User stories:
 
 ## PROCESS:
 
-File set up
-Data Model the data I will be receiving from the SPCA
-Wireframes for the different screens
-Routes
-Components
-Testing
+* File set up
+* Data Model the data I will be receiving from the SPCA
+* Wireframes for the different screens
+* Routes
+* Components
+* Testing
 
 
