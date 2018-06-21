@@ -1,6 +1,10 @@
 import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 import Nav from './Nav'
+import Home from './Home'
+import Menu from './Menu'
+import Facilities from './Facilities'
+import Events from './Events'
 import Rules from './Rules'
 
 const App = () => {
@@ -12,7 +16,12 @@ const App = () => {
         <div className='frame'>
           <div className='content'>
 
+            <Route path='/' component={Home} />
+            <Route path='/menu' component={Menu} />
+            <Route path='/facilities' component={Facilities} />
+            <Route path='/events' component={Events} />
             <Route path='/rules' component={Rules} />
+
           </div>
         </div>
 

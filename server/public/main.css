@@ -29,7 +29,6 @@ html, body {
   height: 100vh;
   position: fixed;
   z-index: 40;
-  pointer-events: none;
   top: 0;
 }
 
