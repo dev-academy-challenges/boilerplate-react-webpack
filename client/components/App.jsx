@@ -1,19 +1,23 @@
 import React from 'react'
-import {HashRouter as Router, Route, Link} from 'react-router-dom'
+import {HashRouter as Router, Route} from 'react-router-dom'
 import Nav from './Nav'
 
 const App = () => {
   return (
-    <div>
-      <div className='nav'>
-        <Nav />
-      </div>
-      <div className='frame'>
-        <div className='content'>
-        Hello
+    <Router>
+      <div>
+
+        <div className='nav'>
+          <Nav />
         </div>
+
+        <div className='frame'>
+          <div className='content'>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </Router>
   )
 }
 
