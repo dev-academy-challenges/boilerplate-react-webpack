@@ -8,7 +8,7 @@ import Rules from './Rules'
 
 const Nav = () => {
   return (
-    <div>
+    <div className='nav'>
       <ul>
         <li>
           <Link to='/'>Home</Link>
@@ -26,11 +26,12 @@ const Nav = () => {
           <Link to='/rules'>Rules</Link>
         </li>
 
+        <Route path='/' component={Home} />
         <Route path='/menu' component={Menu} />
         <Route path='/facilities' component={Facilities} />
         <Route path='/events' component={Events} />
         <Route path='/rules' component={Rules} />
-        <Route path='/' component={Home} />
+        
       </ul>
     </div>
   )
