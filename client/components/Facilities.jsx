@@ -1,13 +1,22 @@
 import React from 'react'
 import {HashRouter as Router, Route, Link} from 'react-router-dom'
 
-const Facilities = () => {
+const Facilities = (props) => {
   return (
     <div>
-      <div clasName="Heading">
+      <div clasName='Heading'>
         <h1>Our Facilities</h1>
       </div>
-      <div className="fac list">
+      <div className='fac-pic'>
+        <img src='../../images/panslab.jpeg'/>
+      </div>
+      <div className='fac-corn drill'>
+        <img src='../../images/facilities-corn-drill.gif'/>
+      </div>
+      <div className='fac-knife'>
+        <img src='../../images/facilities-knife.gif'/>
+      </div>
+      <div className='fac list'>
         <ul>
           <li>3 x fridges</li>
           <li>1 x electrical stovetop element</li>
