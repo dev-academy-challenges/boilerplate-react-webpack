@@ -3,7 +3,7 @@ import {HashRouter as Router, Route, Link} from 'react-router-dom'
 
 const Facilities = (props) => {
   return (
-    <div>
+    <div container>
       <div clasName='Heading'>
         <h1>Our Facilities</h1>
       </div>
