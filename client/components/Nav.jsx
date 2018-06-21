@@ -31,7 +31,7 @@ const Nav = () => {
         <Route path='/facilities' component={Facilities} />
         <Route path='/events' component={Events} />
         <Route path='/rules' component={Rules} />
-        
+
       </ul>
     </div>
   )

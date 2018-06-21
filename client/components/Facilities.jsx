@@ -4,9 +4,10 @@ import {HashRouter as Router, Route, Link} from 'react-router-dom'
 const Facilities = () => {
   return (
     <div>
-      Fac
+      <h1>Fac</h1>
     </div>
   )
 }
 
 export default Facilities
+
