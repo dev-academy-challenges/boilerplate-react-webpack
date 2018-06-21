@@ -79,6 +79,13 @@ html, body {
 /* Indi Rules */
 
 /* Shane Events */
+.event-div{
+  background: url('./images/original.jpg') no-repeat 50% 50% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 /* Caitlyn Facilities */
 
