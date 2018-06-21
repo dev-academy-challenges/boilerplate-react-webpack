@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  border: 0.2px solid transparent;
+  border: 0.2px solid red;
 }
 
 html, body {
@@ -74,6 +74,10 @@ html, body {
 .content-home h1 {
   font-size: 30px;
   text-transform: uppercase;
+}
+
+.menuBox {
+  margin-top: 3%;
 }
 
 /* Indi Rules */
