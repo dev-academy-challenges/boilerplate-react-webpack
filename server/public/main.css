@@ -1,0 +1,27 @@
+/* Main CSS */
+* {
+  box-sizing: border-box;
+  border: 0.2px solid red;
+}
+
+body {
+  background-color: pink;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.frame {
+  width: 92%;
+  margin: auto;
+}
+
+
+/* Bron Home */
+
+/* Indi Rules */
+
+/* Shane Events */
+
+/* Caitlyn Facilities */
+
+/* Anthony Menu/Shopping */
