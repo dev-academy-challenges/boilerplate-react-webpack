@@ -8,7 +8,7 @@ import Rules from './Rules'
 
 const Nav = () => {
   return (
-    <div>
+    <div className='nav'>
       <ul>
         <li>
           <Link to='/'>Home</Link>

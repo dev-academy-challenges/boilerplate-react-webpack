@@ -5,12 +5,9 @@ import Nav from './Nav'
 const App = () => {
   return (
     <Router>
-      <div>
-
-        <div className='nav'>
-          <Nav />
-        </div>
-
+      <div className='container'>
+        <Nav />
+        
         <div className='frame'>
           <div className='content'>
           </div>
