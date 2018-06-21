@@ -1,10 +1,5 @@
 import React from 'react'
 import {HashRouter as Route, Link} from 'react-router-dom'
-import Home from './Home'
-import Menu from './Menu'
-import Facilities from './Facilities'
-import Events from './Events'
-import Rules from './Rules'
 
 const Nav = () => {
   return (
