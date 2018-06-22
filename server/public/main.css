@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  border: 0.2px solid red;
+  border: 0.2px solid transparent;
 }
 
 html, body {
@@ -78,24 +78,28 @@ html, body {
 }
 
 #title {
+  position: relative;
   width: 50%;
-  left: 10%;
+  left: 5%;
 }
 
 #thought {
-  width: 50%;
-  left: 20%;
-  margin-top: 8%
+  width: 60%;
+  left: 0;
+  top: 0;
 }
 
 #main-title {
   position: absolute;
-  font-size: 60px;
+  left: 12%;
+  top: 5%;
+  font-size: 70px;
   color: darkred;
   text-align: left;
   width: 20%;
   font-family: 'Permanent Marker', cursive;
   text-transform: uppercase;
+  line-height: 80px;
 }
 
 .menuBox {
