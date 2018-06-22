@@ -7,8 +7,7 @@ const Events = () => {
       <p>fdfdfdffdfdfd</p>
       <p>fdfdfdffdfdfd</p>
       <p>fdfdfdffdfdfd</p>
-      {/* <img src='../../images/original.jpg'/> */}
-    </div>
+     </div>
   )
 }
 

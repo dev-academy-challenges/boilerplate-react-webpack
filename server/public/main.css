@@ -106,21 +106,35 @@ html, body {
 
 
 .rules{
-  background: url('./images/jah-no-partial.png') no-repeat center center;
+  background: url('./images/partial.jpg') no-repeat;
   color: white;
+  margin-top: 3em;
+  margin-left: 2em;
+  text-indent: 2em;
+  background-size: cover;
+
 }
 .darules {
   color: white;
   font-family: 'Bangers', cursive;
+  text-align: left;
+  font-size: 3em;
+  line-height: 2.5em ;
+  font-style: center;
 }
 
 
-.spaceout {
-
-  line-height: 1.4rem ;
-
+.spaceout ol {
+  line-height: 2.2rem;
+  font-size: 1.5em;
+  text-indent: -2em;
+  font-family: 'Bangers', cursive;
+  word-spacing: 0.2em ;
 }
 
+#majorgif {
+  float:right;
+}
 
 /* Shane Events */
 .event-div{
@@ -130,6 +144,8 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+
 
 /* Caitlyn Facilities */
 
