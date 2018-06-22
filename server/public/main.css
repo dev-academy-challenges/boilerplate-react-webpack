@@ -133,14 +133,12 @@ html, body {
 
 /* Caitlyn Facilities */
 
-html, body {
-  background: linear-gradient(rgb(119, 26, 19), rgb(204, 154, 166));
-}
+
 
 .Heading {
   position: absolute;
   margin-top: 200px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 
   text-align: center;
   line-height: 1.5;
   color: rgb(247, 248, 161);  
@@ -150,7 +148,7 @@ html, body {
 .fac-list {
 
   position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   padding: 30px;
   line-height: 1.5;

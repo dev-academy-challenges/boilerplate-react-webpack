@@ -24,7 +24,7 @@ const Facilities = (props) => {
           <li>1 x microwave</li>
           <li>1 x jug</li>
           <li>1 x sandwhich press/grill</li>
-          <li>coffee devices include</li>
+          <li>coffee devices include:</li>
           <li>plunger</li>
           <li>stovetop</li>
           <li>compostable/recyclable waste management system</li>
