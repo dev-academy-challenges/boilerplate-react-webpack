@@ -10,13 +10,13 @@ const Facilities = (props) => {
       <div className='fac-pic'>
         <img src='../../images/panslab.jpeg'/>
       </div>
-      <div className='fac-corn drill'>
+      {/* <div className='fac-corn drill'>
         <img src='../../images/facilities-corn-drill.gif'/>
       </div>
       <div className='fac-knife'>
         <img src='../../images/facilities-knife.gif'/>
-      </div>
-      <div className='fac list'>
+      </div> */}
+      <div className='fac-list'>
         <ul>
           <li>3 x fridges</li>
           <li>1 x electrical stovetop element</li>
@@ -29,7 +29,9 @@ const Facilities = (props) => {
           <li>stovetop</li>
           <li>compostable/recyclable waste management system</li>
         </ul>
-        <p> If there are any issues with our kihini facilities, please inform Marion
+      </div>
+      <div className='contact'>
+        <p> If there are any issues with our kihini facilities please inform Marion. Thank you!
         </p>
       </div>
     </div>
