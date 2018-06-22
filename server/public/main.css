@@ -133,9 +133,72 @@ html, body {
 
 /* Caitlyn Facilities */
 
-.fac-list {
+html, body {
+  background: linear-gradient(rgb(119, 26, 19), rgb(204, 154, 166));
+}
+
+.Heading {
+  position: absolute;
+  margin-top: 200px;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  color: rgb(247, 248, 161);  
+  margin-left: 400px;
+}
+
+.fac-list {
+
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 30px;
+  line-height: 1.5;
+  color: rgb(247, 248, 161);  
+  list-style-type: none;
+  margin-top: 50px;
+  margin-left: 475px;
+}
+
+.fac-list ul {
+  list-style: none;
+  font-weight: bold;
+}
+
+.fac-list li {
+  font-size: 1.8rem;
+  text-align: left;
+  width: 100%;
+}
+
+.fac-pic {
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 100%;
+
+}
+
+.contact {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 30px;
+  line-height: 1.5;
+  color: rgb(75, 75, 7); 
   font-style: italic;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+
+.fac-corn-drill {
+
+}
+
+.fac-knife {
+
 }
 
 
