@@ -16,7 +16,7 @@ const App = () => {
         <div className='frame'>
           <div className='content'>
 
-            <Route path='/' component={Home} />
+            <Route exact path='/' component={Home} />
             <Route path='/menu' component={Menu} />
             <Route path='/facilities' component={Facilities} />
             <Route path='/events' component={Events} />

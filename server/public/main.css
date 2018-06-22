@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  border: 0.2px solid transparent;
+  border: 0.2px solid red;
 }
 
 html, body {
@@ -12,7 +12,7 @@ html, body {
 }
 
 .frame {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -28,6 +28,7 @@ html, body {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  left: 0;
   z-index: 40;
   top: 0;
 }
@@ -35,7 +36,8 @@ html, body {
 .nav ul {
   position: fixed;
   display: flex;
-  width: 94%;
+  width: 98%;
+  margin: auto;
   list-style: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -68,12 +70,36 @@ html, body {
 /* Bron Home */
 
 .content-home {
-  background: url('/catsun.jpg') no-repeat center center;
+  margin-top: 4%;
+  margin-left: 0;
+  min-width: 100vw;
+  height: 800px;
+  background: url('images/catsun.jpg') no-repeat left top;
 }
 
-.content-home h1 {
-  font-size: 30px;
+#title {
+  width: 50%;
+  left: 10%;
+}
+
+#thought {
+  width: 50%;
+  left: 20%;
+  margin-top: 8%
+}
+
+#main-title {
+  position: absolute;
+  font-size: 60px;
+  color: darkred;
+  text-align: left;
+  width: 20%;
+  font-family: 'Permanent Marker', cursive;
   text-transform: uppercase;
+}
+
+.menuBox {
+  margin-top: 3%;
 }
 
 /* Indi Rules */
@@ -99,5 +125,11 @@ html, body {
 /* Shane Events */
 
 /* Caitlyn Facilities */
+
+.fac-list {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
 
 /* Anthony Menu/Shopping */

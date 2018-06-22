@@ -4,7 +4,10 @@ import React from 'react'
 const Home = () => {
   return (
     <div className='content-home'>
-      <h1>Cafe Kihini</h1>
+      <div id='title'>
+        <img id='thought' src='images/thought.png' alt='thought bubble'/>
+        <h1 id='main-title'>Cafe Kihini</h1>
+      </div>
     </div>
   )
 }
