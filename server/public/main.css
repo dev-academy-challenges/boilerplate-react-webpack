@@ -23,12 +23,9 @@ html, body {
 
 .nav {
   box-sizing: border-box;
-  border-top: 20px solid #ffdf8b;
-  border-bottom: 20px solid #ffdf8b;
-  border-right: 40px solid #ffdf8b;
-  border-left: 40px solid #ffdf8b;
+  border-top: 20px solid orangered;
   width: 100vw;
-  height: 100vh;
+  height: 20vh;
   position: fixed;
   left: 0;
   z-index: 2;
@@ -38,14 +35,14 @@ html, body {
 .nav ul {
   position: fixed;
   display: flex;
-  width: 98%;
+  width: 100%;
   margin: auto;
   list-style: none;
   text-transform: uppercase;
   font-weight: bold;
   z-index: 2;
   top: 0;
-  background-color: #ffdf8b;
+  background-color: orangered;
   padding: 1.5rem;
 }
 
