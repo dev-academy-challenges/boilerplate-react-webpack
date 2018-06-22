@@ -104,6 +104,24 @@ html, body {
 
 /* Indi Rules */
 
+
+.rules{
+  background: url('./images/jah-no-partial.png') no-repeat center center;
+  color: white;
+}
+.darules {
+  color: white;
+  font-family: 'Bangers', cursive;
+}
+
+
+.spaceout {
+
+  line-height: 1.4rem ;
+
+}
+
+
 /* Shane Events */
 
 /* Caitlyn Facilities */
