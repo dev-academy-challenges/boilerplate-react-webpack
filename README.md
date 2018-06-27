@@ -1,11 +1,9 @@
-# SPCA-Street-Appeal
+# SPCA-EVENT-PORTAL
 
 ## Set Up
 ```
 yarn
 ```
-
-
 
 ## MVP
 
@@ -44,9 +42,12 @@ User stories:
 
 * File set up
 * Data Model the data I will be receiving from the SPCA
-* Wireframes for the different screens
+* Seeds and migrations
 * Routes
+* Functions in db.js
+* Test server
+* Wireframes for the different screens
 * Components
-* Testing
+* Test browser
 
 
