@@ -42,7 +42,7 @@ User stories:
 
 * File set up
 * Data Model the data I will be receiving from the SPCA
-* Seeds and migrations
+* Seeds and Migrations
 * Routes
 * Functions in db.js
 * Test server
