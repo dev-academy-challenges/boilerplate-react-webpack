@@ -3,7 +3,7 @@ exports.up = (knex, Promise) => {
     table.increments('id').primary()
     table.string('name')
     table.string('breed')
-    table.integer('owner_id')
+    table.integer('volunteer_id')
   })
 }
 
