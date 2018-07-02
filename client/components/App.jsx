@@ -1,12 +1,13 @@
 import React from 'react'
+import Header from './Header'
+import Main from './Main'
+import Footer from './Footer'
 
 const App = () => {
   return (
     <div className='container-fluid'>
-      <Nav />
-
-      <img id='spca-logo' src="../public/images/SPCA_logo.png" alt="SPCA logo" />
-      <h1>SPCA - EVENT PORTAL</h1>
+      <Header />
+      <Main />
       <Footer />
     </div>
   )
