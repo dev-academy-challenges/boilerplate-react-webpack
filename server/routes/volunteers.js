@@ -4,7 +4,7 @@ const db = require('../db/db')
 
 const router = express.Router()
 
-router.get('/volunteers', (req, res) => {
+router.get('/', (req, res) => {
   db.getAllVolunteers()
     .then(volunteers => {
       res.json(volunteers)
@@ -16,7 +16,7 @@ router.get('/volunteers', (req, res) => {
     })
 })
 
-router.get('/volunteers/:id', (req, res) => {
+router.get('/:id', (req, res) => {
   const id = Number(req.params.id)
   db.getVolunteer(id)
     .then(volunteer => {
@@ -29,7 +29,7 @@ router.get('/volunteers/:id', (req, res) => {
     })
 })
 
-router.put('/volunteers/:id', (req, res) => {
+router.put('/:id', (req, res) => {
   const id = Number(req.params.id)
   db.editVolunteer(id)
     .then(volunteer => {
@@ -42,7 +42,7 @@ router.put('/volunteers/:id', (req, res) => {
     })
 })
 
-router.post('/volunteers', (req, res) => {
+router.post('/', (req, res) => {
   const newVol = req.body
   db.addVolunteer(newVol)
     .then(volunteer => {
@@ -55,7 +55,7 @@ router.post('/volunteers', (req, res) => {
     })
 })
 
-router.delete('/volunteers/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
   const id = Number(req.params.id)
   db.deleteVolunteer(id)
     .then(volunteer => {
