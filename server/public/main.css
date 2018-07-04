@@ -6,25 +6,81 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 * {
   box-sizing: border-box;
-  border: 0.2px solid transparent;
+  border: 0.2px solid red;
 }
 
 
-body {
-  background-color:#007AC2;
-  font-family: Arial, Helvetica, sans-serif;
+html, body {
+  background-color:white;
+  font-family: Helvetica, sans-serif;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-  max-width: 100%;
+#container-fluid {
+  width: 100vw;
+  height: 100vh;
 }
 
 a {
-color: black;
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
   color: black;
+}
+
+/* HEADER */
+
+#header {
+  display: flex;
+}
+
+#left-head, #right-head {
+  width: 50%;
+}
+
+#left-head {
+  display: flex;
+}
+
+#spca-logo {
+  margin: 1rem;
+}
+
+#right-head ul {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 1.5rem;
+}
+
+#right-head li {
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  
+}
+
+#right-head a {
+  color: black;
+  text-decoration: none;
+}
+
+#right-head a:hover {
+  border-bottom: 2px solid darkslateblue;
+}
+
+.current {
+  color: darkslateblue;
+}
+
+/* MAIN */
+
+#main {
+  height: 500px;
 }

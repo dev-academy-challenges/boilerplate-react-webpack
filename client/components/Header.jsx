@@ -4,14 +4,14 @@ export const Header = () => {
   return (
     <div id='header'>
       <div id='left-head'>
-        <img id='spca-logo' src="../public/images/spca.png" alt="SPCA logo" />
-        <h1>SPCA - EVENT PORTAL</h1>
+        <img id='spca-logo' src='../../images/spca.png' alt="SPCA logo" />
+        <h1>EVENT PORTAL</h1>
       </div>
       <div id='right-head'>
-        <ul id='nav'>
-          <li>Volunteers</li>
-          <li>Roster</li>
-          <li>Contact</li>
+        <ul>
+          <a href='#'><li>Volunteers</li></a>
+          <a href='#'><li>Roster</li></a>
+          <a href='#'><li>Contact</li></a>
         </ul>
       </div>
     </div>
