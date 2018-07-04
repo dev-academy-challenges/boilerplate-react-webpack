@@ -19,9 +19,9 @@ User stories:
 
 1. As an Area Coordinator, I need to be able to see a list of current volunteers for my designated area
 
-2. As an AC I need to be able to filter the volunter list by: day, time, location, w/ friend, w/ pet, contacted, confirmed so I can see the status of all my volunteers
+2. As an AC I need to be able to filter the volunteer list by: day, time, location, w/ friend, w/ pet, contacted, confirmed so I can see the status of all my volunteers
 
-3. As an AC I need to be able to send automatic emails to inidividual volunteers confirming their day, time and location
+3. As an AC I need to be able to send automatic emails to individual volunteers confirming their day, time and location
 
 4. As an AC I need to be able to mark off volunteers as contacted or confirmed
 

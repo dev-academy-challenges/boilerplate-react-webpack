@@ -9,8 +9,9 @@ export const Header = () => {
       </div>
       <div id='right-head'>
         <ul id='nav'>
-          <li></li>
-          <li></li>
+          <li>Volunteers</li>
+          <li>Roster</li>
+          <li>Contact</li>
         </ul>
       </div>
     </div>
