@@ -2,12 +2,14 @@ import React from 'react'
 
 export const Header = () => {
   return (
-    <div id='header'>
-      <div id='left-head'>
+    <div className='header'>
+      <div className='logobox'>
         <img id='spca-logo' src='../../images/spca.png' alt="SPCA logo" />
+      </div>
+      <div className='title'>
         <h1>EVENT PORTAL</h1>
       </div>
-      <div id='right-head'>
+      <div className='navbar'>
         <ul>
           <a href='#'><li>Volunteers</li></a>
           <a href='#'><li>Roster</li></a>

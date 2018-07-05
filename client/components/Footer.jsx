@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div id='footer'>
-      ©SPCA New Zealand 2019
+    <div className='footer'>
+      <p>©2019 SPCA New Zealand</p>
     </div>
   )
 }
