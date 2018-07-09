@@ -1,10 +1,18 @@
 import React from 'react'
+import {Header} from './Header'
+import {Main} from './Main'
+import {Footer} from './Footer'
+import {Banner} from './Banner'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <div className='container-fluid'>
+      <Header />
+      <Banner />
+      <Main />
+      <Footer />
+    </div>
   )
 }
 
 export default App
-
