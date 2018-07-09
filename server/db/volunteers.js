@@ -20,6 +20,6 @@ function createVolunteer (email, password, conn) {
   return db('volunteers')
     .insert({
       email,
-      hash: password
+      password
     })
 }

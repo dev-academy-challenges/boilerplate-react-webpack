@@ -42,18 +42,18 @@ router.put('/:id', (req, res) => {
     })
 })
 
-router.post('/', (req, res) => {
-  const newVol = req.body
-  db.addVolunteer(newVol)
-    .then(volunteer => {
-      res.status(200).end()
-    })
-    .catch(err => {
-    // eslint-disable-next-line no-console
-      console.error(err)
-      res.status(500).send('Unable to read from database')
-    })
-})
+// router.post('/', (req, res) => {
+//   const newVol = req.body
+//   db.addVolunteer(newVol)
+//     .then(volunteer => {
+//       res.status(200).end()
+//     })
+//     .catch(err => {
+//     // eslint-disable-next-line no-console
+//       console.error(err)
+//       res.status(500).send('Unable to read from database')
+//     })
+// })
 
 router.delete('/:id', (req, res) => {
   const id = Number(req.params.id)

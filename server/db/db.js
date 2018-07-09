@@ -9,7 +9,7 @@ module.exports = {
   getAllVolunteers,
   getVolunteer,
   editVolunteer,
-  addVolunteer,
+  // addVolunteer,
   deleteVolunteer
 }
 
@@ -28,9 +28,9 @@ function editVolunteer (updatedVolunteer) {
     .update(updatedVolunteer)
 }
 
-function addVolunteer (newVol) {
-  return db('volunteers').insert(newVol)
-}
+// function addVolunteer (newVol) {
+//   return db('volunteers').insert(newVol)
+// }
 
 function deleteVolunteer (id) {
   return db('volunteers')
