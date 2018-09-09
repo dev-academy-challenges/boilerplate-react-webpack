@@ -1,0 +1,33 @@
+h1 {
+  font-family: 'Noto Serif KR', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3%;
+}
+
+h2 {
+  font-family: 'Noto Serif KR', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 30px;
+  font-family: 'Noto Serif KR', sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+.leaflet-container {
+  margin-left: 8%;
+  margin-right: 5%;
+  height: 600px;
+  width: 800px;
+}
+
+.button {
+  text-align: center;
+  background-color: white;
+}
