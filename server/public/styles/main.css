@@ -12,14 +12,6 @@ h2 {
   text-align: center;
 }
 
-h3 {
-  padding-top: 30px;
-  font-family: 'Noto Serif KR', sans-serif;
-  font-size: 15px;
-  text-align: center;
-}
-
-
 .leaflet-container {
   margin-left: 8%;
   margin-right: 5%;
@@ -27,7 +19,12 @@ h3 {
   width: 800px;
 }
 
-.button {
+/* .button {
   text-align: center;
   background-color: white;
+} */
+
+button {
+  border: none;
+  text-align: center;
 }
