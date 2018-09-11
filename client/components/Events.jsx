@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default class Galleries extends React.Component {
+export default class Events extends React.Component {
   render() {
     return (
       <div>
-        <h3>Galleries</h3>
+        <h3>Events</h3>
       </div>
     )
   }

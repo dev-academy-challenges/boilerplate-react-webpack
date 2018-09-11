@@ -6,17 +6,24 @@ h1 {
   padding-top: 3%;
 }
 
-h2 {
+h2, link {
   font-family: 'Noto Serif KR', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Noto Serif KR', sans-serif;
+  font-size: 10px;
   text-align: center;
 }
 
 .leaflet-container {
-  margin-left: 8%;
-  margin-right: 5%;
-  height: 600px;
-  width: 800px;
+  margin: 3%;
+  height: 700px;
+  width: 700px;
+  padding-left: 20%;
 }
 
 /* .button {
@@ -27,4 +34,5 @@ h2 {
 button {
   border: none;
   text-align: center;
+  color: goldenrod;
 }
