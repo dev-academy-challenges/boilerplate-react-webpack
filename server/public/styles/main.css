@@ -53,3 +53,18 @@ marker {
   text-align: center;
   text-decoration: none;
 }
+
+.list {
+  margin: 5%;
+}
+
+.name, title {
+  font-family: 'Noto Serif KR', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact, location, date, email {
+  font-family: 'Noto Serif KR', sans-serif;
+  font-size: 15px;
+}
