@@ -32,7 +32,6 @@ p {
   height: 700px;
   width: 60%;
   margin-left: 20%;
-  z-index: -1;
 }
 
 
@@ -47,4 +46,10 @@ button {
   text-align: center;
   color: goldenrod;
   border: none;
+}
+
+marker {
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
 }
