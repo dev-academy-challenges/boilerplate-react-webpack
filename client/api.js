@@ -1,10 +1,14 @@
 import request from 'superagent'
 
-const rootUrl = 'http://localhost:3000/'
+const calendarApi = 'https://www.googleapis.com/calendar/v3'
 
-export function getAllGalleries () {
-  return request.get(rootUrl + '/getAllGalleries')
+export function calendarApi () {
+  return request
+    .get(calendarApi)
     .then(res => {
-      return res.body.getAllGalleries
+      return res.body
+    })
+    .catch(err => {
+      console.log(err.message)
     })
 }

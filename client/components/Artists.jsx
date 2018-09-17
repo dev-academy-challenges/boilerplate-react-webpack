@@ -7,12 +7,16 @@ export default class Artists extends React.Component {
   render() {
     let artists = [
       {id: 1,
-        name: 'Dane Mitchell',
-        email: 'danemitchell@artist.com'
+        name: 'Rita Angus',
+        website: 'www.ritaangus.com'
       },
       {id: 2,
-        name: 'Gordon Walters',
-        email: 'gordonwalters@artist.com'
+        name: 'Colin McCahon',
+        website: 'www.mccahon.co.nz'
+      },
+      {id: 2,
+        name: 'Judy Millar',
+        website: 'www.judymillar.com'
       }
     ]
 
@@ -25,7 +29,7 @@ export default class Artists extends React.Component {
         <ul>
           {artists.map(artist => (
             <li><span className='name'>{artist.name}</span><br />
-            <span className='email'>Email: {artist.email}</span></li>)
+            <span className='email'>Website : {artist.website}</span></li>)
           )}
         </ul>
         </div>

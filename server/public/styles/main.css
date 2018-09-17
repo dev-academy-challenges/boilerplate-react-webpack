@@ -17,8 +17,11 @@ h3 {
   font-family: 'Noto Serif KR', sans-serif;
   font-size: 25px;
   font-weight: bold;
-  text-align: center;
+  margin-left: 5%;
+  /* text-align: center; */
   padding-top: 2%;
+  /* font-style: italic; */
+  /* text-decoration: underline; */
 }
 
 p {
@@ -55,16 +58,20 @@ marker {
 }
 
 .list {
-  margin: 5%;
+  padding-left: 7%;
+  list-style: circle;
 }
 
-.name, title {
+.name, .title {
   font-family: 'Noto Serif KR', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
+  color: goldenrod;
+  /* color: rgb(189, 189, 189); */
 }
 
-.contact, location, date, email {
+.contact, .location, .date, .email, .website {
   font-family: 'Noto Serif KR', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
+  margin: 2%;
 }
