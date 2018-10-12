@@ -8,11 +8,16 @@ import Menu from './Menu'
 
 const Home = () => {
   return (
-    <div>
-      <Header />
-      <Menu />
-      <ShowMap />
-      <Footer />
+    <div className='container'>
+      <div className='header pure-u-1'>
+        <h1>Art Gallery Finder</h1>
+      </div>
+      <div className='header pure-u-1'>
+        <Menu />
+      </div>
+      <div className='header pure-u-1'>
+        <ShowMap />
+      </div>
     </div>
   )
 }
