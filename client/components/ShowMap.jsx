@@ -4,26 +4,6 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import { Link } from 'react-router-dom'
 
 export default function ShowMap(props) {
-  // const MyPopupMarker = ({ map, position, children }) => (
-  //   <Marker map={map} position={position}>
-  //     <Popup>
-  //       <span>{children}</span>
-  //     </Popup>
-  //   </Marker>
-  // )
-
-  // const MyMarkersList = ({ map, markers }) => {
-  //   const items = markers.map(({ key, ...props }) => (
-  //       <MyPopupMarker key={key} map={map} {...props} />
-  //   ));
-  //   return <div style={{display: 'none'}}>{items}</div>;
-  // }
-
-  // const markers = [
-  //   {key: 'marker1', position: [-36.85116405, 174.76635718], children: 'Auckland Art Gallery'},
-  //   {key: 'marker2', position: [-36.85217709, 174.76039195], children: 'Art Gallery'},                  
-  // ]
-
   return (
     <div className='map'>
       <div className='cbdmap'>
