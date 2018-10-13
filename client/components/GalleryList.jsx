@@ -29,7 +29,6 @@ export default class Galleries extends React.Component {
 
     return (
       <div>
-        <h3>Galleries</h3>
         <div className='list pure-u-1'>
         <ul>
           {galleries.map(gallery => (

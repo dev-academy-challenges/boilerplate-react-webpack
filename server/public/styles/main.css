@@ -36,8 +36,8 @@ p {
 
 
 .leaflet-container {
-  height: 700px;
-  width: 60%;
+  height: 1-vh;
+  width: 100vw;
   filter: grayscale(30%)
 }
 
