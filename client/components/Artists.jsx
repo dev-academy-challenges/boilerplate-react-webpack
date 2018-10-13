@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from './Header'
 import Menu from './Menu'
 
 
@@ -22,7 +21,6 @@ export default class Artists extends React.Component {
 
     return (
       <div>
-        <Header />
         <Menu />
         <h3>Artists</h3>
         <div className='list'>

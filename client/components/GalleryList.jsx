@@ -1,5 +1,4 @@
 import React from 'react'
-import Menu from './Menu'
 
 export default class Galleries extends React.Component {
 
@@ -30,9 +29,8 @@ export default class Galleries extends React.Component {
 
     return (
       <div>
-        <Menu />
         <h3>Galleries</h3>
-        <div className='list'>
+        <div className='list pure-u-1'>
         <ul>
           {galleries.map(gallery => (
             <li><span className='name'>{gallery.name}</span><br />

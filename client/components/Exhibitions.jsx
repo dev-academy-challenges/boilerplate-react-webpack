@@ -1,7 +1,5 @@
 import React from 'react'
-import Header from './Header'
 import Menu from './Menu'
-// import Calendar from './Calendar'
 
 
 export default class Exhibitions extends React.Component {
@@ -56,7 +54,6 @@ export default class Exhibitions extends React.Component {
 
     return (
       <div>
-        <Header />
         <Menu />
         <h3>Current Exhibitions</h3>
         <div className='list'>
