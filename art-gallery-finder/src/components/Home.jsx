@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Navigation from './Navigation'
-import ShowMap from './ShowMap'
+// import ShowMap from './ShowMap'
 
 export default class Home extends Component {
     render() {
@@ -12,9 +12,9 @@ export default class Home extends Component {
                 <div className="navbar">
                 <Navigation />
                 </div>
-                <div className="map">
+                {/* <div className="map">
                 <ShowMap />
-                </div>
+                </div> */}
                 </div>
         )
     }
