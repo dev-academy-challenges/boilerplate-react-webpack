@@ -19,7 +19,7 @@ export default function ShowMap(props) {
             <Marker position={[-36.85116405, 174.76635718]}>
               <Popup><span><Link to={'/galleries'}>Auckland Art Gallery</Link></span></Popup>
             </Marker>
-            <Marker position={[-36.8579061, 174.7580323]}>
+            {/* <Marker position={[-36.8579061, 174.7580323]}>
               <Popup><span><Link to={'/galleries'}>Artspace</Link></span></Popup>
             </Marker>
             <Marker position={[-36.8503976, 174.7657216]}>
@@ -39,7 +39,7 @@ export default function ShowMap(props) {
             </Marker>
             <Marker position={[-36.8467669, 174.7692954]}>
               <Popup><span><Link to={'/galleries'}>Gus Fisher Gallery</Link></span></Popup>
-            </Marker>
+            </Marker> */}
           </div>
         </Map>
       </div>
