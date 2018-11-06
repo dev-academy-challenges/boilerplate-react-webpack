@@ -3,11 +3,11 @@ import React, { Component } from 'react'
 export default class ContactForm extends Component {
     state = {
         name: '',
-        email:'',
+        email: '',
         phone: ''
     }
     handleChange = (e) => {
-        this.setState ({
+        this.setState({
             [e.target.name]: e.target.value
         })
     }
@@ -24,23 +24,23 @@ export default class ContactForm extends Component {
     render() {
         return (
             <div>
-                <form onSubmit ={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit}>
                     <input
                         placeholder="name"
                         value={this.state.name}
                         onChange={this.handleChange}
-                        name ="name" />
-                        <input
+                        name="name" />
+                    <input
                         placeholder="email"
                         value={this.state.email}
                         onChange={this.handleChange}
-                        name ="email" />
-                        <input
+                        name="email" />
+                    <input
                         placeholder="phone"
                         value={this.state.phone}
                         onChange={this.handleChange}
-                        name ="phone" />
-                        <button type='submit'>Submit</button>
+                        name="phone" />
+                    <button type='submit'>Submit</button>
                 </form>
             </div>
         )

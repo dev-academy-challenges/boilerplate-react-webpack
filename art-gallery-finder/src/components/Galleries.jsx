@@ -8,6 +8,7 @@ export default class Galleries extends Component {
     render() {
         return (
             <div>
+                <h3>Galleries</h3>
                 <GalleriesForm
                 onCreate = {this.handleCreate} />
                 </div>
