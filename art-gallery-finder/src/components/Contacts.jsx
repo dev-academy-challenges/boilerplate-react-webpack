@@ -1,19 +1,15 @@
 import React, { Component } from 'react'
+import ContactForm from './ContactForm'
 
 export default class Contacts extends Component {
-    // constructor (props) {
-    //     super (props)
-    //     this.state =
-
-    // }
+    handleCreate = (data) => {
+        console.log(data)
+    }
     render() {
         return (
             <div>
-                <form>
-                    <input
-                    placeholder = "name"
-                    value = "name" />
-                    </form>
+                <ContactForm
+                onCreate = {this.handleCreate} />
             </div>
         )
     }
