@@ -2,38 +2,33 @@ import React, { Component } from 'react'
 
 export default class GalleriesForm extends Component {
     state = {
-        name: '',
-        phone: '',
-        email: '',
-        location: ''
+        name: ''
     }
     handleChange = (e) => {
         this.setState = ({
-            [e.target.name] : e.target.value
+            [e.target.name]: e.target.value
         })
     }
     handleSubmit = (e) => {
         e.preventDefault()
-        this.props.onCreate (this.state)
+        this.props.onCreate(this.state)
         this.setState = ({
-            name: '',
-            phone: '',
-            email: '',
-            location: ''
+            name: ''
         })
     }
 
-    render () {
+    render() {
         return (
             <div>
-                <form onSubmit = {this.handleSubmit}>
-                <input
-                placeholder="name"
-                value={this.setState.name}
-                onChange={this.handleChange}
-                name="name" />
+                <form onSubmit={this.handleSubmit}>
+                    <input
+                        placeholder="name"
+                        value={this.state.name}
+                        onChange={this.handleChange}
+                        name="name" />
+                    <button type='submit'>Submit</button>
                 </form>
-                </div>
+            </div>
         )
     }
 }
