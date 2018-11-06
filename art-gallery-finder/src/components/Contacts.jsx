@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Navigation from './Navigation'
 import ContactForm from './ContactForm'
 
 export default class Contacts extends Component {
@@ -8,9 +9,14 @@ export default class Contacts extends Component {
     render() {
         return (
             <div>
-                <h3>Contact Us</h3>
-                <ContactForm
-                    onCreate={this.handleCreate} />
+                <div className="navbar">
+                    <Navigation />
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <ContactForm
+                        onCreate={this.handleCreate} />
+                </div>
             </div>
         )
     }

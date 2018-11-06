@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Navigation from './Navigation'
 import ArtistForm from './ArtistForm';
 import ArtistInfoList from './ArtistInfoList';
 
@@ -31,11 +32,16 @@ export default class Artists extends Component {
         const { information } = this.state
         return (
             <div>
-                <h3>Artists</h3>
-                <ArtistForm
-                    onCreate={this.handleCreate} />
-                <ArtistInfoList
-                data = {this.state.information} />
+                <div className="navbar">
+                    <Navigation />
+                </div>
+                <div>
+                    <h3>Artists</h3>
+                    <ArtistForm
+                        onCreate={this.handleCreate} />
+                    <ArtistInfoList
+                        data={this.state.information} />
+                </div>
             </div>
         )
     }
