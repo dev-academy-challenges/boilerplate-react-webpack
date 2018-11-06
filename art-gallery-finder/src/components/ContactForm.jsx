@@ -24,7 +24,7 @@ export default class ContactForm extends Component {
     render() {
         return (
             <div>
-                <form>
+                <form onSubmit ={this.handleSubmit}>
                     <input
                         placeholder="name"
                         value={this.state.name}
