@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 
 export default class ArtistForm extends Component {
-    state = {
+ state = {
         name: '',
-        email: ''
+        email: '',
+        phone: ''
     }
     handleChange = (e) => {
-        this.setState = ({
+        this.setState({
             [e.target.name]: e.target.value
         })
     }
@@ -15,7 +16,8 @@ export default class ArtistForm extends Component {
         this.props.onCreate(this.state)
         this.setState = ({
             name: '',
-            email: ''
+            email: '',
+            phone: ''
         })
     }
 
@@ -33,6 +35,11 @@ export default class ArtistForm extends Component {
                         value={this.state.email}
                         onChange={this.handleChange}
                         name="email" />
+                    <input
+                        placeholder="phone"
+                        value={this.state.phone}
+                        onChange={this.handleChange}
+                        name="phone" />
                     <button type='submit'>Submit</button>
                 </form>
             </div>
