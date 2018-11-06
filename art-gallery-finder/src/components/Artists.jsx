@@ -28,6 +28,9 @@ export default class Artists extends Component {
             information: information.concat({ id: this.id++, ...data })
         })
     }
+    handleRemove = (data) => {
+        
+    }
     render() {
         const { information } = this.state
         return (
