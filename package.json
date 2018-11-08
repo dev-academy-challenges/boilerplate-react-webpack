@@ -1,14 +1,16 @@
 {
   "name": "boilerplate-react-webpack",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A webpack React starter",
   "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
   "main": "server/index.js",
   "author": "EDA",
   "license": "ISC",
   "scripts": {
-    "start": "webpack && node server",
+    "client": "webpack-dev-server --hot --inline",
     "dev": "node server & webpack --watch",
+    "server": "node server",
+    "start": "webpack && node server",
     "test": "jest --watchAll"
   },
   "babel": {
@@ -41,5 +43,6 @@
     "react-dom": "^16.6.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
-  }
+  },
+  "host": "http://localhost:3000"
 }
