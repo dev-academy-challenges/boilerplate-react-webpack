@@ -62,3 +62,6 @@ typings/
 
 # Webpack bundles
 bundle.*
+
+# Development databases
+dev.sqlite3
