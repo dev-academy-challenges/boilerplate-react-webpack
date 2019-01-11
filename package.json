@@ -1,14 +1,16 @@
 {
   "name": "boilerplate-react-webpack",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A webpack React starter",
   "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
   "main": "server/index.js",
   "author": "EDA",
   "license": "ISC",
   "scripts": {
-    "start": "webpack && node server",
+    "client": "webpack-dev-server --hot --inline",
     "dev": "node server & webpack --watch",
+    "server": "node server",
+    "start": "webpack && node server",
     "test": "jest --watchAll"
   },
   "babel": {
@@ -17,7 +19,8 @@
       "react"
     ],
     "plugins": [
-      "transform-class-properties"
+      "transform-class-properties",
+      "transform-object-rest-spread"
     ]
   },
   "jest": {
@@ -26,18 +29,21 @@
     ]
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.4",
+    "superagent": "^4.0.0-beta.5"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^22.1.4",
-    "react": "^16.2.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "jest": "^23.6.0",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
     "webpack": "^4.28.0",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.11"
