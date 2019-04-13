@@ -1,6 +1,6 @@
 import React from 'react'
 import Inputs from './Inputs'
-import ChartComp from './ChartComp'
+// import ChartComp from './ChartComp'
 import { Route } from 'react-router-dom'
 
 
@@ -9,7 +9,7 @@ const App = () => {
     <React.Fragment>
       <h1 className="header">Discrete Trial Data</h1>
       <div className="content">
-        <Route path = '/'component={ChartComp} />
+        {/* <Route path = '/'component={ChartComp} /> */}
         <Route path ='/' component={Inputs} />
       </div>
     </React.Fragment>
