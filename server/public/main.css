@@ -1,0 +1,28 @@
+/* .button {
+  width: 30%;
+  float: left;
+  border: 1px solid black;
+} */
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(89, 10, 192);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #34135a}
+
+.button:active {
+  background-color: #ac4eeb;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
