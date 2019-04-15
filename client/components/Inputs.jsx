@@ -1,14 +1,16 @@
 import React from 'react'
-// import Chart from 'chart.js'
-import { promptDetails } from '../utilities'
-const session = []
+// import { promptDetails } from '../utilities'
+
+let session = []
 const reducer = (accumulator, currentValue) => accumulator + currentValue
 
 class Inputs extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {display: 0}
+    this.state = {
+      display: 0,
+    }
   }
 
   updateDisplay = (num) => {
@@ -31,7 +33,9 @@ class Inputs extends React.Component {
         <button onClick={() =>
            this.updateDisplay(Math.round((session.reduce(reducer) / session.length) * 100))}
             className='button'>Done</button>
-        <button onClick={() => this.updateDisplay(0)} className='button'>Reset</button>
+        <button onClick={() => console.log('Plot me!')}
+          className='button'>Plot Data</button>
+        <button onClick={() => {this.updateDisplay(0); session = []}} className='button'>Reset</button>
       </React.Fragment>
     )
   }
@@ -51,7 +55,3 @@ className='button'>Correct</button>
 export default Inputs
 
 // case switch can be used to change the prompt, correct, incorrect inputs to 0 1 0
-
-// Alice pointed me towards count exercise, the words rerender were used, also could select element?
-
-//States and counter
