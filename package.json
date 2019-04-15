@@ -2,7 +2,10 @@
   "name": "boilerplate-react-webpack",
   "version": "0.2.2",
   "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-academy-challenges/boilerplate-react-webpack.git"
+  },
   "main": "server/index.js",
   "author": "EDA",
   "license": "ISC",
@@ -30,6 +33,8 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "knex": "^0.16.5",
+    "sqlite3": "^4.0.6",
     "superagent": "^5.0.2"
   },
   "devDependencies": {
@@ -49,5 +54,13 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/dev-academy-challenges/boilerplate-react-webpack/issues"
+  },
+  "homepage": "https://github.com/dev-academy-challenges/boilerplate-react-webpack#readme",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": []
 }
