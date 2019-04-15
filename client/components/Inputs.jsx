@@ -8,13 +8,23 @@ class Inputs extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {display: 0}
+    this.state = {
+      display: 0,
+    }
   }
 
   updateDisplay = (num) => {
     this.setState({
-      display: num
+      display: num,
     })
+  }
+
+  updateSession = () => {
+    this.setState({
+    display: 0,
+    session: []
+  })
+
   }
 
   render () {
@@ -31,11 +41,27 @@ class Inputs extends React.Component {
         <button onClick={() =>
            this.updateDisplay(Math.round((session.reduce(reducer) / session.length) * 100))}
             className='button'>Done</button>
-        <button onClick={() => this.updateDisplay(0)} className='button'>Reset</button>
+        <button onClick={() => this.updateSession()} className='button'>Reset</button>
       </React.Fragment>
     )
   }
 }
+
+
+
+
+
+
+export default Inputs
+
+// case switch can be used to change the prompt, correct, incorrect inputs to 0 1 0
+
+//States and counter
+
+// const oldSession = session !== []
+// if (oldSession) {
+//   session === []
+// }
 
 
 {/* <button onClick={() => session.push('Incorrect')}
@@ -44,14 +70,4 @@ className='button'>Incorrect</button>
 className='button'>Prompt</button>
 <button onClick={() => session.push('Correct')}
 className='button'>Correct</button>
- */}
-
-
-
-export default Inputs
-
-// case switch can be used to change the prompt, correct, incorrect inputs to 0 1 0
-
-// Alice pointed me towards count exercise, the words rerender were used, also could select element?
-
-//States and counter
+  */}
