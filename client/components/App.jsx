@@ -9,7 +9,8 @@ export default class App extends React.Component {
           buttons: [],
           activeProfile: null,
           detailsVisible: false,
-          addButtonVisible: false
+          addProfileVisible: false,
+          editProfileVisible: false
            }
 
       this.refreshList = this.refreshList.bind(this)
@@ -19,17 +20,81 @@ export default class App extends React.Component {
       this.showAddProfiles = this.showAddProfiles.bind(this)
   }
   
-    componentDidMount () {
+     componentDidMount () {
       this.refreshList()
     }
 
+     renderProfiles (err, profiles) {
+      this.setState({
+        error: err,
+        profiles: profiles || []
+      })
+    }
+      refreshList (err) {
+      this.setState({
+        error: err,
+        addProfileVisible,
+        editProfileVisible 
+      })
+      getProfiles(this.renderProfiles)
+    }
+
+      showAddProfile () {
+      this.setState({
+        activeProfile: profiles,
+        detailsVisible: true
+      })
+    }
+
+      hideDetails () {
+      this.setState({
+        detailsVisible: false
+      })
+    }
+
+      delteProfiles (profiles) {
+        deleteProjects(profiles, this.refreshList.List)
+      }
+
+      showEditProfiles (profiles) {
+        this.setState({
+          activeProfiles: profiles,
+          editProfileVisible: true
+        })
+      }
+
 }
 
-const App = () => {
+render ( {
   return (
-    <h1>Draft Project!</h1>
-  )
-}
+    <div> 
+      <ErrorMessage error ={this.state.error} />
+    <h1>Dilworth Profiles</h1>
 
-export default App
+    <ProfileList
+      showDetails={this.showDetails}
+      deleteProfile={this.deleteProfile}
+      showEditProfile={this.showEditProfile}
+      profiles={this.state.profiles} />
+
+      <p>
+      <a id='show-widget-link' href='#'
+      onClick
+      </p>
+  )
+})
+
+
+
+
+
+
+
+// const App = () => {
+//   return (
+//     <h1>Draft Project!</h1>
+//   )
+// }
+
+// export default App
 
