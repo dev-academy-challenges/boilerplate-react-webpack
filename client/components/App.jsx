@@ -2,22 +2,24 @@ import React from 'react'
 
 export default class App extends React.Component {
   constructor (props) {
-      super(props)
-
+      super (props)
       this.state = {
           error: null,
-          buttons: [],
-          activeProfile: null,
+          profiles: [],
+          activeProfiles: null,
           detailsVisible: false,
-          addProfileVisible: false,
-          editProfileVisible: false
+          addProfilesVisible: false,
+          editProfilesVisible: false
            }
 
       this.refreshList = this.refreshList.bind(this)
-      this.showDetails = this.showDetailsList.bind(this)
+      this.showDetails = this.showDetails.bind(this)
       this.hideDetails = this.hideDetails.bind(this)
-      this.renderProfiles = this.renderButtons.bind(this)
+      this.renderProfiles = this.renderProfiles.bind(this)
       this.showAddProfiles = this.showAddProfiles.bind(this)
+      this.deleteProfiles = this.deleteWidget.bind(this)
+      this.showEditProfiles = this.showEditWidget.bind(this)
+
   }
   
      componentDidMount () {
@@ -33,26 +35,20 @@ export default class App extends React.Component {
       refreshList (err) {
       this.setState({
         error: err,
-        addProfileVisible,
-        editProfileVisible 
+        addProfilesVisible,
+        editProfilesVisible 
       })
       getProfiles(this.renderProfiles)
     }
 
       showAddProfile () {
       this.setState({
-        activeProfile: profiles,
+        activeProfiles: profiles,
         detailsVisible: true
       })
     }
 
-      hideDetails () {
-      this.setState({
-        detailsVisible: false
-      })
-    }
-
-      delteProfiles (profiles) {
+      deleteProfiles (profiles) {
         deleteProjects(profiles, this.refreshList.List)
       }
 
@@ -63,26 +59,43 @@ export default class App extends React.Component {
         })
       }
 
-}
 
-render ( {
+
+render () {
   return (
-    <div> 
+<div>
       <ErrorMessage error ={this.state.error} />
-    <h1>Dilworth Profiles</h1>
+    
+      <h1>Dilworth Profiles</h1>
 
-    <ProfileList
+    <ProfilesList
       showDetails={this.showDetails}
-      deleteProfile={this.deleteProfile}
-      showEditProfile={this.showEditProfile}
+      deleteProfiles={this.deleteProfiles}
+      showEditProfiles={this.showEditProfiles}
       profiles={this.state.profiles} />
 
       <p>
-      <a id='show-widget-link' href='#'
-      onClick
+      <a id='show-profiles-link' href='#'
+      onClick={this.showAddProfiles}>Add Profile</a>  
       </p>
-  )
-})
+
+      <p>
+      <a id='refresh-link' href='#'
+      onCllick={this.refreshList}>Update List</a>
+      </p>
+
+      {this.state.addProfilesVisible && <addProfiles
+      finishAdd={this.refreshList} />}
+
+      {this.state.editProfileVisible && <EditProfiles
+      finishEdit={this.refreshList}
+      profile={this.state.activeProfile} />}
+      </div>
+   
+        )
+      }
+    }
+    
 
 
 
