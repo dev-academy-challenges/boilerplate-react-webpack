@@ -1,5 +1,6 @@
 import React from 'react'
 // import Chart from 'chart.js'
+
 import { Line } from 'react-chartjs-2'
 import { sessionData, target } from './Inputs'
 
@@ -24,6 +25,7 @@ class LineChart extends React.Component {
           'rgba(255, 159, 64, 0.2)'
         ]
       }
+
     }
   }
 
@@ -32,6 +34,7 @@ class LineChart extends React.Component {
     displayLegend: false, 
     legendPosition: 'left'
   }
+
 
   render () {
     return (
@@ -49,6 +52,7 @@ class LineChart extends React.Component {
                 display: this.props.displayLegend,
                 position: this.props.legendPosition
               },
+
               maintainAspectRatio: false
             }} />
         </div>

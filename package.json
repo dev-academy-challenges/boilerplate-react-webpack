@@ -31,6 +31,7 @@
   "dependencies": {
     "chart.js": "^2.8.0",
     "express": "^4.16.4",
+    "react-chartjs-2": "^2.7.6",
     "superagent": "^5.0.2"
   },
   "devDependencies": {

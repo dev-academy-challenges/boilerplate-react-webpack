@@ -11,16 +11,22 @@ class Inputs extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      display: 0,
-      target: ''
+      display: 0
     }
   }
 
   updateDisplay = (num, str) => {
     this.setState({
-      display: num,
-      target: str
+      display: num
     })
+  }
+
+  updateSession = () => {
+    this.setState({
+    display: 0,
+    session: []
+  })
+
   }
 
   render () {
@@ -57,10 +63,18 @@ export default Inputs
 // case switch can be used to change the prompt, correct, incorrect inputs to 0 1 0
 
 
+//States and counter
+
+// const oldSession = session !== []
+// if (oldSession) {
+//   session === []
+// }
+
+
+
 {/* <button onClick={() => session.push('Incorrect')}
 className='button'>Incorrect</button>
 <button onClick={() => session.push('Prompt')}
 className='button'>Prompt</button>
 <button onClick={() => session.push('Correct')}
 className='button'>Correct</button>
- */}
