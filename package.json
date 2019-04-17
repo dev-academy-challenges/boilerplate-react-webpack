@@ -29,10 +29,13 @@
     ]
   },
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
     "chart.js": "^2.8.0",
     "express": "^4.16.4",
+    "materialize-css": "^1.0.0-rc.2",
     "react-chartjs-2": "^2.7.6",
-    "superagent": "^5.0.2"
+    "superagent": "^5.0.2",
+    "typeface-roboto": "0.0.54"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
