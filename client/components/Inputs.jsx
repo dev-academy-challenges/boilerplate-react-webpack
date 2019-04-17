@@ -4,6 +4,10 @@ import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
 // import { promptDetails } from '../utilities'
 
+// import 'typeface-roboto'
+
+
+
 
 
 let session = []
@@ -55,12 +59,15 @@ class Inputs extends React.Component {
          className='display'>
 
         <Button size="large"
+        color="primary"
         onClick={() => session.push(0)}
         className='button'>Incorrect</Button>
         <Button size="large"
+        color="primary"
         onClick={() => session.push(0)}
         className='button'>Prompt</Button>
         <Button size="large"
+        color="primary"
         onClick={() => session.push(1)}
         className='button'>Correct</Button>
 
@@ -73,12 +80,21 @@ class Inputs extends React.Component {
         alignitems="center"
          className='display'>
 
-        <Button size="large" onClick={() =>
-           this.updateDisplay(Math.round((session.reduce(reducer) / session.length) * 100))}
+        <Button size="large"
+        color="secondary"
+        onClick={() =>
+           this.updateDisplay
+           (Math.round((session.reduce(reducer) / session.length) * 100))}
             className='button'>Done</Button>
-        <Button size="large" onClick={() => sessionData.push(this.state.display) & console.log(sessionData)}
+        <Button size="large"
+        color="secondary"
+         onClick={() =>
+         sessionData.push(this.state.display) & console.log(sessionData)}
           className='button'>Plot Data</Button>
-        <Button size="large" onClick={() => {this.updateDisplay(0); session = []}}
+        <Button size="large"
+        color="secondary"
+         onClick={() =>
+         {this.updateDisplay(0); session = []}}
          className='button'>Reset</Button>
          </Grid>
       </React.Fragment>
