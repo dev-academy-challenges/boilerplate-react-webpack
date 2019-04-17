@@ -3,6 +3,7 @@ import React from 'react'
 
 let session = []
 const reducer = (accumulator, currentValue) => accumulator + currentValue
+let heldData = []
 
 class Inputs extends React.Component {
 
@@ -12,7 +13,7 @@ class Inputs extends React.Component {
       display: 0,
     }
   }
-
+  
   updateDisplay = (num) => {
     this.setState({
       display: num
