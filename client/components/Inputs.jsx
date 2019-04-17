@@ -2,6 +2,10 @@ import React from 'react'
 //Material UI Imports
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
+import TextField from '@material-ui/core/TextField';
+import FormControl from '@material-ui/core/FormControl';
+
+
 // import { promptDetails } from '../utilities'
 
 // import 'typeface-roboto'
@@ -20,13 +24,15 @@ class Inputs extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      display: 0
+      display: 0,
+      target: ''
     }
   }
 
   updateDisplay = (num, str) => {
     this.setState({
-      display: num
+      display: num,
+      target: str
     })
   }
 
@@ -35,8 +41,9 @@ class Inputs extends React.Component {
     display: 0,
     session: []
   })
-
   }
+
+
 
   render () {
     return (
@@ -47,9 +54,26 @@ class Inputs extends React.Component {
         justify="center"
         alignitems="center"
          className='display'>
-         <h1>{this.state.target}</h1> 
-        <h1>{`${this.state.display}%`}</h1>
+         <h1>Target: {this.state.target}</h1> 
+        <h1>{`${this.state.display}%`} Correct</h1>
         </Grid>
+
+        <Grid 
+        container
+        direction="row"
+        justify="space-evenly"
+        alignitems="center"
+         className='display'>
+
+        <TextField 
+        id="outlined-target"
+        label="target"
+       
+        value={this.state.target}
+        variant="outlined"
+        onChange={this.updateDisplay.target} />
+
+         </Grid>
 
         <Grid 
         container
@@ -72,7 +96,6 @@ class Inputs extends React.Component {
         className='button'>Correct</Button>
 
         </Grid>
-        <br></br><br></br>
         <Grid 
         container
         direction="row"
@@ -116,9 +139,9 @@ export default Inputs
 
 
 
-{/* <button onClick={() => session.push('Incorrect')}
+/* <button onClick={() => session.push('Incorrect')}
 className='button'>Incorrect</button>
 <button onClick={() => session.push('Prompt')}
 className='button'>Prompt</button>
 <button onClick={() => session.push('Correct')}
-className='button'>Correct</button> */}
+className='button'>Correct</button> */
