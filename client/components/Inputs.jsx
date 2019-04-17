@@ -4,7 +4,7 @@ import React from 'react'
 let session = []
 const reducer = (accumulator, currentValue) => accumulator + currentValue
 export let sessionData = []
-
+export let target = []
 
 class Inputs extends React.Component {
 
@@ -12,19 +12,22 @@ class Inputs extends React.Component {
     super(props)
     this.state = {
       display: 0,
+      target: ''
     }
   }
 
-  updateDisplay = (num) => {
+  updateDisplay = (num, str) => {
     this.setState({
-      display: num
+      display: num,
+      target: str
     })
   }
 
   render () {
     return (
       <React.Fragment>
-        <div className='display'><h1>{`${this.state.display}%`}</h1></div>
+        <div className='display'><h1>{this.state.target}</h1> 
+        <h1>{`${this.state.display}%`}</h1></div>
         <button onClick={() => session.push(0)}
           className='button'>Incorrect</button>
         <button onClick={() => session.push(0)}

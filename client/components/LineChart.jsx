@@ -1,10 +1,7 @@
 import React from 'react'
 // import Chart from 'chart.js'
-import { Bar, Line, Pie } from 'react-chartjs-2'
-import { sessionData } from './Inputs'
-
-// // var myChart = new Chart(ctx, {...})
-// // var ctx = document.getElementById('myChart')
+import { Line } from 'react-chartjs-2'
+import { sessionData, target } from './Inputs'
 
 class LineChart extends React.Component {
   constructor (props) {
