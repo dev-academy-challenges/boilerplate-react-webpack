@@ -1,21 +1,23 @@
 import React from 'react'
-// import Chart from 'chart.js'
-import { promptDetails } from '../utilities'
-const session = []
+// import { promptDetails } from '../utilities'
+
+let session = []
 const reducer = (accumulator, currentValue) => accumulator + currentValue
+export let sessionData = []
+export let target = []
 
 class Inputs extends React.Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      display: 0,
+      display: 0
     }
   }
 
-  updateDisplay = (num) => {
+  updateDisplay = (num, str) => {
     this.setState({
-      display: num,
+      display: num
     })
   }
 
@@ -30,7 +32,8 @@ class Inputs extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <div className='display'><h1>{`${this.state.display}%`}</h1></div>
+        <div className='display'><h1>{this.state.target}</h1> 
+        <h1>{`${this.state.display}%`}</h1></div>
         <button onClick={() => session.push(0)}
           className='button'>Incorrect</button>
         <button onClick={() => session.push(0)}
@@ -41,7 +44,10 @@ class Inputs extends React.Component {
         <button onClick={() =>
            this.updateDisplay(Math.round((session.reduce(reducer) / session.length) * 100))}
             className='button'>Done</button>
-        <button onClick={() => this.updateSession()} className='button'>Reset</button>
+        <button onClick={() => sessionData.push(this.state.display) & console.log(sessionData)}
+          className='button'>Plot Data</button>
+        <button onClick={() => {this.updateDisplay(0); session = []}}
+         className='button'>Reset</button>
       </React.Fragment>
     )
   }
@@ -56,6 +62,7 @@ export default Inputs
 
 // case switch can be used to change the prompt, correct, incorrect inputs to 0 1 0
 
+
 //States and counter
 
 // const oldSession = session !== []
@@ -64,10 +71,10 @@ export default Inputs
 // }
 
 
+
 {/* <button onClick={() => session.push('Incorrect')}
 className='button'>Incorrect</button>
 <button onClick={() => session.push('Prompt')}
 className='button'>Prompt</button>
 <button onClick={() => session.push('Correct')}
 className='button'>Correct</button>
-  */}

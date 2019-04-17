@@ -1,20 +1,19 @@
 import React from 'react'
 // import Chart from 'chart.js'
-import { Bar, Line, Pie } from 'react-chartjs-2'
 
-// // var myChart = new Chart(ctx, {...})
-// // var ctx = document.getElementById('myChart')
+import { Line } from 'react-chartjs-2'
+import { sessionData, target } from './Inputs'
 
 class LineChart extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
       chartData: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
         datasets: [
           {
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3]
+            label: '% Correct',
+            data: sessionData
           }
         ],
         backgroundColor: [
@@ -26,17 +25,34 @@ class LineChart extends React.Component {
           'rgba(255, 159, 64, 0.2)'
         ]
       }
-    } 
-}
+
+    }
+  }
+
+  static defaultProps = {
+    displayTitle: true,
+    displayLegend: false, 
+    legendPosition: 'left'
+  }
+
 
   render () {
     return (
       <React.Fragment>
         <div className="chart">
-          CHART COMPONENT
           <Line
             data={this.state.chartData}
             options={{
+              title: {
+                display: this.props.displayTitle,
+                text: 'Colour Matching',
+                fontSize: 30
+              },
+              legend: {
+                display: this.props.displayLegend,
+                position: this.props.legendPosition
+              },
+
               maintainAspectRatio: false
             }} />
         </div>
