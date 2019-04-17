@@ -1,8 +1,10 @@
+
+
 /* .button {
   width: 30%;
   float: left;
   border: 1px solid black;
-} */
+} 
 
 .button {
   display: inline-block;
@@ -25,4 +27,4 @@
   background-color: #ac4eeb;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-}
+} */
