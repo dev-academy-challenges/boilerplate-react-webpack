@@ -1,6 +1,7 @@
 import React from 'react'
 // import Chart from 'chart.js'
 import { Bar, Line, Pie } from 'react-chartjs-2'
+import { sessionData } from './Inputs'
 
 // // var myChart = new Chart(ctx, {...})
 // // var ctx = document.getElementById('myChart')
@@ -14,7 +15,7 @@ class LineChart extends React.Component {
         datasets: [
           {
             label: '% Correct',
-            data: [23, 33, 66, 40, 67]
+            data: sessionData
           }
         ],
         backgroundColor: [
@@ -31,7 +32,7 @@ class LineChart extends React.Component {
 
   static defaultProps = {
     displayTitle: true,
-    displayLegend: true, 
+    displayLegend: false, 
     legendPosition: 'left'
   }
 
@@ -44,7 +45,7 @@ class LineChart extends React.Component {
             options={{
               title: {
                 display: this.props.displayTitle,
-                text: 'Matching Colours',
+                text: 'Colour Matching',
                 fontSize: 30
               },
               legend: {
