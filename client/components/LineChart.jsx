@@ -3,13 +3,14 @@ import React from 'react'
 
 import { Line } from 'react-chartjs-2'
 import { sessionData, target } from './Inputs'
+import Grid from '@material-ui/core/Grid'
 
 class LineChart extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
       chartData: {
-        labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        labels: target,
         datasets: [
           {
             label: '% Correct',
@@ -39,7 +40,11 @@ class LineChart extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <div className="chart">
+           <Grid
+          container
+          direction="row"
+          justify="center"
+          alignitems="center">
           <Line
             data={this.state.chartData}
             options={{
@@ -52,10 +57,9 @@ class LineChart extends React.Component {
                 display: this.props.displayLegend,
                 position: this.props.legendPosition
               },
-
               maintainAspectRatio: false
             }} />
-        </div>
+        </Grid>
       </React.Fragment>
     )
   }
