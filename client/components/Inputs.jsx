@@ -2,8 +2,9 @@ import React from 'react'
 //Material UI Imports
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
-import TextField from '@material-ui/core/TextField';
-import FormControl from '@material-ui/core/FormControl';
+import TextField from '@material-ui/core/TextField'
+import Form from '@material-ui/core/FormControl'
+import Typography from '@material-ui/core/Typography'
 
 
 // import { promptDetails } from '../utilities'
@@ -54,8 +55,13 @@ class Inputs extends React.Component {
         justify="center"
         alignitems="center"
          className='display'>
-         <h1>Target: {this.state.target}</h1> 
-        <h1>{`${this.state.display}%`} Correct</h1>
+
+      <Typography component="h5" variant="h5" gutterBottom>
+        Target: {this.state.target}
+      </Typography>
+      <Typography component="h5" variant="h5" gutterBottom>
+        {`${this.state.display}%`} Correct
+      </Typography>
         </Grid>
 
         <Grid 
@@ -65,6 +71,7 @@ class Inputs extends React.Component {
         alignitems="center"
          className='display'>
 
+        <form noValidate autoComplete="off">
         <TextField 
         id="outlined-target"
         label="target"
@@ -72,6 +79,7 @@ class Inputs extends React.Component {
         value={this.state.target}
         variant="outlined"
         onChange={this.updateDisplay.target} />
+        </form>
 
          </Grid>
 
@@ -126,17 +134,6 @@ class Inputs extends React.Component {
 }
 
 export default Inputs
-
-// case switch can be used to change the prompt, correct, incorrect inputs to 0 1 0
-
-
-//States and counter
-
-// const oldSession = session !== []
-// if (oldSession) {
-//   session === []
-// }
-
 
 
 /* <button onClick={() => session.push('Incorrect')}

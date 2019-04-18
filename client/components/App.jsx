@@ -8,8 +8,8 @@ import Grid from '@material-ui/core/Grid'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import blue from '@material-ui/core/colors/blue'
 import purple from '@material-ui/core/colors/purple'
+import Typography from '@material-ui/core/Typography'
 
-// import 'typeface-roboto'
 
 const theme = createMuiTheme({
   palette: {
@@ -21,7 +21,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: 'Roboto',
-    fontSize: 20
+    fontSize: 40
   }
 })
 
@@ -34,7 +34,10 @@ const App = () => {
           direction="row"
           justify="center"
           alignitems="center">
-          <h1 fontFamily="default">Discrete Trial Data</h1>
+          <Typography component="h5" variant="h5" gutterBottom>
+        Discrete Trial Data
+          </Typography>
+
         </Grid>
         <div className="content">
           <Route path = '/'component={LineChart} />
