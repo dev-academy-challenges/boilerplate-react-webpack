@@ -1,16 +1,19 @@
-// const environment = process.env.NODE_ENV || 'development'
-// const config = require('../../knexfile')[environment]
-// const connection = require('knex')(config)
+const environment = process.env.NODE_ENV || 'development'
+const config = require('../../knexfile')[environment]
+const connection = require('knex')(config)
 
-// module.exports = {
-//   getData,
-//   updateData
-// }
+module.exports = {
+  getTargets,
+  newTarget
+}
 
-// function getData(db = connection) {
-//   return db('data').select()
-// }
+function getTargets (db = connection) {
+  return db('targets').select()
+}
 
-// function updateData(db = connection) {
-//   return db('data').insert(SOMETHING GOES HERE)
-// }
+function newTarget (target, db = connection) {
+  return db('targets')
+    .insert({
+      target: target.name
+    })
+}
