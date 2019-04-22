@@ -6,7 +6,7 @@ export default class AddProfiles extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-            name: '',
+            Name: '',
             Age: 0,
             House: '',
             Year: 0,
@@ -31,7 +31,7 @@ export default class AddProfiles extends React.Component {
             return (
                 <div className='add-profiles'>
                 <form>
-                <p>><input placeholder='Name' name='name'
+                <p>><input placeholder='Name' name='Name'
                 onChange={this.handleChange}
                 value={this.state.name}
                 /></p>
@@ -39,7 +39,7 @@ export default class AddProfiles extends React.Component {
                 onChange={this.handleChange}
                 value={this.state.name}
                 /></p>
-                <p><input placeholder='House' name='age'
+                <p><input placeholder='House' name='house'
                 onchange={this.handleChange}
                 value={this.state.name}
                 /></p>

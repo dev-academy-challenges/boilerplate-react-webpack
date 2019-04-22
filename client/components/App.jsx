@@ -64,7 +64,7 @@ export default class App extends React.Component {
 render () {
   return (
 <div>
-      <ErrorMessage error ={this.state.error} />
+      <ErrorMessage error={this.state.error} />
     
       <h1>Dilworth Profiles</h1>
 
