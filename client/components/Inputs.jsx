@@ -3,16 +3,7 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
 import TextField from '@material-ui/core/TextField'
-import Form from '@material-ui/core/FormControl'
 import Typography from '@material-ui/core/Typography'
-
-
-// import { promptDetails } from '../utilities'
-
-// import 'typeface-roboto'
-
-
-
 
 
 let session = []
@@ -76,7 +67,6 @@ class Inputs extends React.Component {
         id="outlined-target"
         label="target"
        
-        value={this.state.target}
         variant="outlined"
         onChange={this.updateDisplay.target} />
         </form>
