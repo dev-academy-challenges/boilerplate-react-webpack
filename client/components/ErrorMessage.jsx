@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class ErrorMessage extends React.Component {
+export default class Error extends React.Component {
     shouldComponentUpdate () {
         return !!this.props.error
     }
@@ -10,7 +10,7 @@ export default class ErrorMessage extends React.Component {
         let errorView = null
         if (error) {
             errorView = (
-                <div className= 'error'>
+                <div className = 'error'>
                 Error: {error.message}
                 </div>
             )

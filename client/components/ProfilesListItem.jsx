@@ -4,11 +4,9 @@ export default function ProfilesListItem ({ profiles, showDetails, deleteProfile
     return (
         <div className='profiles-list-item'>
         {`${profiles.name}`}
-        <a href='#' onClick={() => showDetails(profiles)}>details</a>
-        <span> </span>
-        <a href='#' onClick={() => deleteProfiles(profiles)}>delete</a>
-        <span> </span>
-        <a href='#' onClick={() => showEditProfiles(profiles)}>edit</a>
-        </div>
-    )
+        <a href='#' onClick={() => showDetails(profiles)}>Details</a>
+      <button onClick={() => deleteProfiles(profiles)}>Delete</button>
+      <button onClick={() => displayEditProfiles(Profiles)}>Edit</button>
+    </div>
+  )
 }

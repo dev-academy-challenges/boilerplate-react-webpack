@@ -4,7 +4,7 @@ import ProfilesListItem from './ProfilesListItem'
 
 export default function ProfilesList (props) {
     return (
-        <div className='profiles-list'>
+        <div className ='profiles-list'>
         <h2>List</h2>
         {props.profiles.map(profiles => {
             return <ProfilesListItem
