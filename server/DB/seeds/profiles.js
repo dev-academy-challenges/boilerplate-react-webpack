@@ -1,7 +1,7 @@
 exports.seed = function (knex, Promise) {
-  return knex('widgets').del()
+  return knex('profiles').del()
     .then(function () {
-      return knex('widgets').insert([
+      return knex('profiles').insert([
         { id: 1, name: 'Ihaka Pink', age: 21, year: 13, house: '', comments: '' },
         { id: 2, name: 'Paul Renwick', age: 38, year: 13, house: '', comments: '' },
         { id: 3, name: 'J Taps', age: 18, year: 13, house: '', comments: '' },
