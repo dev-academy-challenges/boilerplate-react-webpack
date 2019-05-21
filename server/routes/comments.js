@@ -28,3 +28,10 @@ router.get('/:id', (req, res) => {
     .then(comment => res.send(comment))
     .catch(err => res.status(500).send(err.message))
 })
+
+router.delete('/', (req, res) => {
+  db.deleteComment(req.body)
+    .then(res.redirect('/comments'))
+})
+
+module.exports = router

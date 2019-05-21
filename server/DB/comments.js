@@ -4,7 +4,8 @@ const connection = require('knex')
 
 module.exports = {
   getComment,
-  addComment
+  addComment,
+  deleteComment
 }
 
 function getComment (id, db = connection) {
@@ -17,4 +18,10 @@ function addComment (newComment, db = connection) {
   return db('comments')
     .insert(newComment)
     .then(() => db('comments').select())
+}
+
+function deleteComment (id, db = connection) {
+  return('comments')
+  .where('id', id)
+  .del()
 }
