@@ -25,3 +25,9 @@ function deleteComment (id, db = connection) {
   .where('id', id)
   .del()
 }
+
+function submitComments (newComment, db = connection ) {
+  return db('comments')
+  where({ userId: submission.userId })
+  .update({ evidence: submission.evidence, date_modified: submission.date_modified })
+}
