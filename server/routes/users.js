@@ -17,7 +17,7 @@ router.delete('/', (req, res) => {
 router.put('/:id', (req, res) => {
   const id = req.params.id
   const submission = {
-    userId id,
+    userId: id,
     userName : req.body.userName
   }
   db.submitUsers(submission)
