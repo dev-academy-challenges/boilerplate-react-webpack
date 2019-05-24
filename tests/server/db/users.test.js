@@ -40,26 +40,26 @@ test('createUser fails if username already exists', () => {
     .then(() => expect(createNewUser()).rejects.toBeDefined)
 })
 
-test('userExists returns false for a nonexistent username' () => {
+test('userExists returns false for a nonexistent username', () => {
   return db.userExists('whothat', testDb)
-  .then(exists => {
-    expect(exists).tobeFalsey()
-  })
-  .catch(err => expect(err).toBeNull)
+    .then(exists => {
+      expect(exists).tobeFalsey()
+    })
+    .catch(err => expect(err).toBeNull)
 })
 
 test('getUserByName returns undefined for a nonexistent username', () => {
   return db.getUserByName('whosthat', testDb)
-  .then(user => {
-    expect(user).toBeFalsey()
-  })
-  .catch(err => expect(err).toBeNull)
+    .then(user => {
+      expect(user).toBeFalsey()
+    })
+    .catch(err => expect(err).toBeNull)
 })
 
 test('getUserById returns undefined for a nonexistent user id', () => {
   return db.getUserById(9999, testDb)
-  .then(user => {
-    expect(user).toBeFalsey()
-  })
-  .catch(err => expect(err).toBeNull)
+    .then(user => {
+      expect(user).toBeFalsey()
+    })
+    .catch(err => expect(err).toBeNull)
 })

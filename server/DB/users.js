@@ -49,7 +49,6 @@ function getUserByName (username, db = connection) {
 
 function deleteUser (id, db = connection) {
   return db('users')
-  .where('id', id)
-  .del()
+    .where('id', id)
+    .del()
 }
-
