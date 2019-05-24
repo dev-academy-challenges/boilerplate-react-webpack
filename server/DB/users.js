@@ -7,7 +7,8 @@ module.exports = {
   createUser,
   userExists,
   getUserById,
-  getUserByName
+  getUserByName,
+  deleteUser
 }
 
 function createUser (username, password, db = connection) {
@@ -45,3 +46,10 @@ function getUserByName (username, db = connection) {
     .where('username', username)
     .first()
 }
+
+function deleteUser (id, db = connection) {
+  return db('users')
+  .where('id', id)
+  .del()
+}
+

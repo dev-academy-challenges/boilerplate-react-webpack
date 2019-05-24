@@ -34,4 +34,15 @@ router.delete('/', (req, res) => {
     .then(res.redirect('/comments'))
 })
 
+router.put('/:id', (req, res) => {
+  const id = req.params.id 
+  const submission = {
+    userId: id,
+    commentId: req.body.commentId
+  }
+  db.submitComments(submission)
+  .then(() => res.json({ notice: 'Evidence has been updated '}))
+  .catch(err => res.status(500).send(err.message))
+})
+
 module.exports = router

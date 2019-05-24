@@ -5,7 +5,8 @@ const connection = require('knex')
 module.exports = {
   getComment,
   addComment,
-  deleteComment
+  deleteComment,
+  submitComments
 }
 
 function getComment (id, db = connection) {
@@ -24,4 +25,10 @@ function deleteComment (id, db = connection) {
   return('comments')
   .where('id', id)
   .del()
+}
+
+function submitComments (submission, db = connection ) {
+  return db('comments')
+  .where({ userId: submission.userId })
+  .update({ evidence: submission.evidence, date_modified: submission.date_modified })
 }
