@@ -9,10 +9,6 @@ router.get('/:id', (req, res) => {
     .catch(err => res.status(500).send(err.message))
 })
 
-router.delete('/', (req, res) => {
-  db.deleteUser(req.body)
-    .then(res.redirect('/users'))
-})
 
 router.put('/:id', (req, res) => {
   const id = req.params.id
