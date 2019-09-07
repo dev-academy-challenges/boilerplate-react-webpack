@@ -18,7 +18,6 @@ class App extends React.Component {
     member.id = this.drone.clientId
     this.setState({member})
   })
-
   }
   
   state = {
