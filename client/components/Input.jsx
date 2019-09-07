@@ -5,16 +5,17 @@ class Input extends React.Component {
     state = {
         text: ''
     }
-
+    //When the text value changes this updates the state
     onChange(e) {
         this.setState({text: e.target.value})
     }
-    
+    //This handles sendinf the message
     onSubmit(e) {
         e.preventDefault()
         this.setState({text: ''})
         this.props.onSendMessage(this.state.text)
     }
+    //Here we keep track of the currently entered text
 render() {
     return (
         <div className='Input'>
@@ -33,3 +34,4 @@ render() {
 }
 }
 export default Input
+//An Input component with a text field and button so that we can send our messages.

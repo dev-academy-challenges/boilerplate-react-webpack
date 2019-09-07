@@ -6,11 +6,13 @@
   }
   
   .App-header {
-    background-color: #262626;
+    background-color: rgb(0, 155, 255);
     overflow: visible;
     width: 100%;
+    border-radius: 8px;
     text-align: center;
     color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif
   }
   
   .Messages-list {
@@ -30,9 +32,9 @@
   }
   
   .Messages-message.currentMember {
-    /*justify-content: flex-end;*/
+    justify-content: flex-start;
     flex-direction: row-reverse;
-    text-align: right;
+    text-align: left;
   }
   
   .Message-content {
@@ -40,21 +42,21 @@
   }
   
   .currentMember > .Message-content {
-    align-items: flex-end;
+    align-items: flex-start;
   }
   
   .Messages-message > .avatar {
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    display: inline-block;
+    display: smile;
     margin: 0 10px -10px;
   }
   
   .Message-content > .username {
     display: block;
     color: gray;
-    font-size: 14px;
+    font-size: 20px;
     padding-bottom: 4px;
   }
   
@@ -66,6 +68,7 @@
     background-color: cornflowerblue;
     color: white;
     display: inline-block;
+    font-family: fantasy
   }
   
   .currentMember > .Message-content .text {
@@ -82,16 +85,16 @@
   
   input {
     padding: 5px;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 8px;
-    border: 1px solid orangered;
+    border: 1px solid rgb(0, 155, 234);
     flex-grow: 1;
   }
   
   button {
     padding: 5px 10px;
-    font-size: 16px;
-    background-color: orangered;
+    font-size: 20px;
+    background-color: rgb(0, 155, 255);
     color: white;
     border: none;
     border-radius: 8px;

@@ -1,35 +1,52 @@
 import React from 'react'
-
 import Messages from './Messages'
 
 import { randomColor, randomName } from '../utils/random'
-
 import Input from './Input'
 
+//Initial state when app starts
 class App extends React.Component {
+  constructor () {
+    super()
+    this.drone = new window.Scaledrone('22LIFPx7BxXo3U40', {data: this.state.member
+  })
+  this.drone.on('open', error => {
+    if (error) {
+      return console.error(error)
+    }
+    const member = {...this.state.member}
+    member.id = this.drone.clientId
+    this.setState({member})
+  })
+
+  }
+  
   state = {
-    messages: [
-      {
-        text:'This is a text message',
-        member: {
-          color: 'blue',
-          username: 'bluemoon'
-        }
-      }
-    ],
+    messages: [],
     member: {
       username: randomName(),
       color: randomColor()
     }
   }
   onSendMessage = (message) => {
-    const messages = this.state.messages
-    messages.push({
-      text: message,
-      member: this.state.member
+    this.drone.publish({
+      room: 'observable-room',
+      message
     })
-    this.setState({ messages: messages })
+    const room = this.drone.subscribe('observable-room')
+  room.on('data', (data, member) => {
+    const messages = this.state.messages
+    messages.push({member, text: data})
+    this.setState({messages})
+  })
+    // const messages = this.state.messages
+    // messages.push({
+    //   text: message,
+    //   member: this.state.member
+    // })
+    // this.setState({ messages: messages })
   }
+  //What we see onscreen from the Input method
   render() {
     return (
       <div className='App'>
@@ -42,11 +59,10 @@ class App extends React.Component {
         />
         <Input
         onSendMessage={this.onSendMessage}
-        />
-         
+        />         
       </div>
     )
   }
-
 }
 export default App
+//An App component which will manage sending and receiving messages and rendering the inner components.
