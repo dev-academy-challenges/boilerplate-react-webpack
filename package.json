@@ -14,7 +14,8 @@
     "start": "run-s build server",
     "build": "webpack",
     "server": "node server",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "lint": "eslint ."
   },
   "babel": {
     "presets": [
@@ -47,6 +48,8 @@
     "babel-loader": "^8.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "7.9.0",
+    "eslint-config-eda": "0.1.4",
     "jest": "^25.3.0",
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
