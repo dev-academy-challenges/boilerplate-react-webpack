@@ -16,7 +16,7 @@
     "server": "node server",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "lint": "eslint ."
+    "lint": "eslint . --ext .js,.jsx"
   },
   "babel": {
     "presets": [
@@ -26,6 +26,12 @@
     "plugins": [
       "@babel/plugin-proposal-class-properties",
       "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "eda",
+    "ignorePatterns": [
+      "bundle.js"
     ]
   },
   "dependencies": {
