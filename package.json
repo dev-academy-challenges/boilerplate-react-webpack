@@ -29,7 +29,9 @@
     ]
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "superagent": "^6.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
