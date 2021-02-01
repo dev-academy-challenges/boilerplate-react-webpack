@@ -7,15 +7,16 @@
   "author": "EDA",
   "license": "ISC",
   "scripts": {
-    "client": "webpack-dev-server --hot --inline --config client/webpack.config.js",
+    "client": "webpack serve --config ./client/webpack.config.js --hot",
     "dev": "run-p dev:client dev:server",
-    "dev:client": "webpack --config ./client/webpack.config.js --watch",
+    "dev:client": "npm run webpack -- --watch",
     "dev:server": "nodemon server",
     "start": "node server",
-    "build": "webpack",
+    "build": "npm run webpack",
     "server": "node server",
     "test": "jest",
     "test:watch": "jest --watchAll",
+    "webpack": "webpack --config ./client/webpack.config.js",
     "lint": "eslint --ext .js,.jsx ."
   },
   "keywords": [
