@@ -1,9 +1,9 @@
 const path = require('path')
 
 module.exports = {
-  entry: './client/index.js',
+  entry: path.join(__dirname, 'index.js'),
   output: {
-    path: path.join(__dirname, 'server/public'),
+    path: path.join(__dirname, '../server/public'),
     filename: 'bundle.js'
   },
   mode: 'development',
@@ -19,6 +19,6 @@ module.exports = {
   },
   devtool: 'source-map',
   devServer: {
-    contentBase: './server/public'
+    contentBase: path.join(__dirname, '../server/public')
   }
 }
