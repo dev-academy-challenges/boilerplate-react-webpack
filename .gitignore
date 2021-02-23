@@ -65,3 +65,5 @@ bundle.*
 
 # Development databases
 dev.sqlite3
+
+tags
